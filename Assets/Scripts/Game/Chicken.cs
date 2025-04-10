@@ -9,6 +9,8 @@ public class Chicken : Animal
 
     Target target;
 
+    float Timer;
+
     private void Awake()
     {
         animalType = AnimalType.Chicken;
@@ -16,7 +18,26 @@ public class Chicken : Animal
 
     private void Update()
     {
+        if (Timer > 0.0f)
+        {
+            Timer -= Time.deltaTime;
+            if (Timer <= 0.0f)
+            {
+                Timer = Random.Range(5.0f, 10.0f);
+                blackboard.SetValue<bool>("CanPeck", !blackboard.GetValue<bool>("CanPeck"));
 
+                if (target.speed == 0)
+                {
+                    blackboard.SetValue<bool>("CanPeck", false);
+                    target.speed = 8;
+                }
+                else
+                {
+                    blackboard.SetValue<bool>("CanPeck", true);
+                    target.speed = 0;
+                }
+            }
+        }
     }
 
     // Update is called once per frame
@@ -31,6 +52,9 @@ public class Chicken : Animal
     protected override void OnStart()
     {
         blackboard.SetOrAddValue<bool>("CanPeck", false);
+        blackboard.SetOrAddValue<float>("Speed", 8.0f);
         target = GetComponent<Target>();
+
+        Timer = Random.Range(5.0f, 10.0f);
     }
 }

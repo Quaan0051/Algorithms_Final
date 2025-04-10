@@ -7753,7 +7753,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   computeShader: {fileID: 7200000, guid: 3faf29752c907394093e8755cba26b27, type: 3}
-  settings: {fileID: 11400000, guid: a7bdc8d5cf05e0744ae32bd65dd2d8f9, type: 2}
+  settings: {fileID: 11400000, guid: 4dbd8c38db73fe948a2a54c27f6b8bbb, type: 2}
   boidPrefab: {fileID: 2662103004925642877, guid: 8325a38b05a786443a171ea8ceebe8e1, type: 3}
   target: {fileID: 442705886}
   boidsToSpawn: 20
@@ -10923,6 +10923,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2869715502239891797, guid: 0af4136405f8d0a41b2203895108a5d4, type: 3}
+      propertyPath: blackboard
+      value: 
+      objectReference: {fileID: 11400000, guid: d3e5f935341c3d645ba2cb32fcb402d3, type: 2}
     - target: {fileID: 4027667219516275348, guid: 0af4136405f8d0a41b2203895108a5d4, type: 3}
       propertyPath: path
       value: 
@@ -10931,6 +10935,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Eggtilda
       objectReference: {fileID: 0}
+    - target: {fileID: 6663389319277980707, guid: 0af4136405f8d0a41b2203895108a5d4, type: 3}
+      propertyPath: tree
+      value: 
+      objectReference: {fileID: 11400000, guid: 37e37e97b69c4c34aa4025392a488cfd, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -23752,6 +23760,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2869715502239891797, guid: 0af4136405f8d0a41b2203895108a5d4, type: 3}
+      propertyPath: blackboard
+      value: 
+      objectReference: {fileID: 11400000, guid: faa3c7021a1dc654fbd31890ff3a35e4, type: 2}
     - target: {fileID: 4027667219516275348, guid: 0af4136405f8d0a41b2203895108a5d4, type: 3}
       propertyPath: path
       value: 
@@ -23760,6 +23772,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Nugget
       objectReference: {fileID: 0}
+    - target: {fileID: 6663389319277980707, guid: 0af4136405f8d0a41b2203895108a5d4, type: 3}
+      propertyPath: tree
+      value: 
+      objectReference: {fileID: 11400000, guid: 3171af03163a97446ac0c77283ed5343, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -32958,7 +32974,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   computeShader: {fileID: 7200000, guid: 3faf29752c907394093e8755cba26b27, type: 3}
-  settings: {fileID: 11400000, guid: a7bdc8d5cf05e0744ae32bd65dd2d8f9, type: 2}
+  settings: {fileID: 11400000, guid: 2bc81a07f39a6b14ea73b423191b4315, type: 2}
   boidPrefab: {fileID: 2662103004925642877, guid: 8325a38b05a786443a171ea8ceebe8e1, type: 3}
   target: {fileID: 886344452}
   boidsToSpawn: 20
