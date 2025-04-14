@@ -13,13 +13,13 @@ MonoBehaviour:
   m_Name: PlayAnimationNode
   m_EditorClassIdentifier: 
   state: 0
-  isStarted: 0
+  isStarted: 1
   blackboard: {fileID: 0}
   guid: 029a7a52c02e14e4b9d4e4dfa2fc11a4
-  position: {x: 99, y: 329}
+  position: {x: 217.22742, y: 301}
   description: 
   animationKey: Alpaca-Walk
---- !u!114 &-5090152041240021558
+--- !u!114 &-9032769093373343941
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -28,18 +28,18 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 35fc7a87a996db4458d5b764e7044887, type: 3}
-  m_Name: RepeaterNode
+  m_Script: {fileID: 11500000, guid: 7a393320974134342a9d5f3c1f7849a0, type: 3}
+  m_Name: MoveToNode
   m_EditorClassIdentifier: 
   state: 0
   isStarted: 0
   blackboard: {fileID: 0}
-  guid: 42d07885ca12ecd45b16e35614c03693
-  position: {x: 12, y: 40}
+  guid: e91cf632194ba8648a6af7c5919a4118
+  position: {x: 562.2273, y: 301}
   description: 
-  child: {fileID: 5270959654019460558}
-  repeatCount: -1
---- !u!114 &-1640696180382344774
+  destinationKey: RandomDestination
+  tolerance: 1
+--- !u!114 &-8146482927272301512
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -48,16 +48,160 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8e15820ae1f346a409d8efcfec7c2656, type: 3}
-  m_Name: LogNode
+  m_Script: {fileID: 11500000, guid: 35760d0d3923c8b4ea02b653ee9e51ae, type: 3}
+  m_Name: RangedDelayNode
   m_EditorClassIdentifier: 
   state: 0
   isStarted: 0
   blackboard: {fileID: 0}
-  guid: 3d4e278a74e75db4a9d273c5c07ea239
-  position: {x: -92, y: 331}
+  guid: a3cab556234eea744868a50f474f5bd7
+  position: {x: 888.2275, y: 301}
   description: 
-  message: I am an Alpaca
+  minDuration: 5
+  maxDuration: 9
+--- !u!114 &-7864076438591272198
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3996b50878de65743a31015986ad0e36, type: 3}
+  m_Name: SequencerNode
+  m_EditorClassIdentifier: 
+  state: 0
+  isStarted: 0
+  blackboard: {fileID: 0}
+  guid: 3bef4a2ed87efae418ba7946235ed4ff
+  position: {x: -455.99997, y: 170.99997}
+  description: 
+  children:
+  - {fileID: 3198187442178841407}
+  - {fileID: 3021912662586103770}
+  - {fileID: -6184311679374015585}
+  - {fileID: 8128667488227831029}
+  - {fileID: 2742273267436195007}
+--- !u!114 &-6742166226588519876
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a393320974134342a9d5f3c1f7849a0, type: 3}
+  m_Name: MoveToNode
+  m_EditorClassIdentifier: 
+  state: 0
+  isStarted: 0
+  blackboard: {fileID: 0}
+  guid: a357f602162be474498b12676f2f8510
+  position: {x: -799.9999, y: 433.99994}
+  description: 
+  destinationKey: Hay
+  tolerance: 1
+--- !u!114 &-6184311679374015585
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1ff6bae773798134ea68be5be9a3b8c2, type: 3}
+  m_Name: PlayAnimationNode
+  m_EditorClassIdentifier: 
+  state: 0
+  isStarted: 0
+  blackboard: {fileID: 0}
+  guid: 5aff26a0fcf228041995d291f72d6685
+  position: {x: -455.99997, y: 301}
+  description: 
+  animationKey: Alpaca-Eating
+--- !u!114 &-4475876727588243741
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1ff6bae773798134ea68be5be9a3b8c2, type: 3}
+  m_Name: PlayAnimationNode
+  m_EditorClassIdentifier: 
+  state: 0
+  isStarted: 0
+  blackboard: {fileID: 0}
+  guid: 78ffe09850eb4254c8ea4b9d361a8814
+  position: {x: 723.2275, y: 301}
+  description: 
+  animationKey: Alpaca-Idle
+--- !u!114 &-3300959818044356595
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 33b2385e8016d244dab298a94d10a405, type: 3}
+  m_Name: RandomizeDestinationNode
+  m_EditorClassIdentifier: 
+  state: 0
+  isStarted: 0
+  blackboard: {fileID: 0}
+  guid: ee6da25c6cd735d4093238cc8ee1b2f4
+  position: {x: 386.22742, y: 301}
+  description: 
+  destinationKey: RandomDestination
+  walkRadius: 75
+--- !u!114 &-2380668768487508758
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0b024b6495757224aa3b5cdc0f6a40ab, type: 3}
+  m_Name: ConditionNode
+  m_EditorClassIdentifier: 
+  state: 0
+  isStarted: 0
+  blackboard: {fileID: 0}
+  guid: 13dd106642bbe4842b87021f447a1531
+  position: {x: -16, y: 33}
+  description: 
+  childTrue: {fileID: -7864076438591272198}
+  childFalse: {fileID: 5270959654019460558}
+  conditionKey: isHungry
+--- !u!114 &-1880818757473964252
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a393320974134342a9d5f3c1f7849a0, type: 3}
+  m_Name: MoveToNode
+  m_EditorClassIdentifier: 
+  state: 0
+  isStarted: 0
+  blackboard: {fileID: 0}
+  guid: de9ae8e839ead634d83d3b369cb36564
+  position: {x: -455.99997, y: 433.99994}
+  description: 
+  destinationKey: HayShed
+  tolerance: 1
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -75,10 +219,63 @@ MonoBehaviour:
   treeState: 0
   nodes:
   - {fileID: 1616245187985775744}
-  - {fileID: -1640696180382344774}
   - {fileID: 5270959654019460558}
   - {fileID: -9116032989936868884}
-  - {fileID: -5090152041240021558}
+  - {fileID: -9032769093373343941}
+  - {fileID: -3300959818044356595}
+  - {fileID: -8146482927272301512}
+  - {fileID: 544602364786520549}
+  - {fileID: -4475876727588243741}
+  - {fileID: -2380668768487508758}
+  - {fileID: -7864076438591272198}
+  - {fileID: 3021912662586103770}
+  - {fileID: 3198187442178841407}
+  - {fileID: -6742166226588519876}
+  - {fileID: 114886263052083999}
+  - {fileID: -1880818757473964252}
+  - {fileID: -6184311679374015585}
+  - {fileID: 8128667488227831029}
+  - {fileID: 2742273267436195007}
+--- !u!114 &114886263052083999
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a393320974134342a9d5f3c1f7849a0, type: 3}
+  m_Name: MoveToNode
+  m_EditorClassIdentifier: 
+  state: 0
+  isStarted: 0
+  blackboard: {fileID: 0}
+  guid: 1c0cc53777eb1f5498a8ce45cc4d7f0b
+  position: {x: -625, y: 433.99994}
+  description: 
+  destinationKey: Trough
+  tolerance: 1
+--- !u!114 &544602364786520549
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 35fc7a87a996db4458d5b764e7044887, type: 3}
+  m_Name: RepeaterNode
+  m_EditorClassIdentifier: 
+  state: 0
+  isStarted: 0
+  blackboard: {fileID: 0}
+  guid: e63b7284eac141c458f7b683eea4cd5d
+  position: {x: 13, y: -88}
+  description: 
+  child: {fileID: -2380668768487508758}
+  repeatCount: -1
 --- !u!114 &1616245187985775744
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -92,12 +289,73 @@ MonoBehaviour:
   m_Name: RootNode
   m_EditorClassIdentifier: 
   state: 0
-  isStarted: 0
+  isStarted: 1
   blackboard: {fileID: 0}
   guid: 1e048a4772949664fbc4157eb5fb0be3
-  position: {x: 13, y: -84.83999}
+  position: {x: 13, y: -213}
   description: 
-  child: {fileID: -5090152041240021558}
+  child: {fileID: 544602364786520549}
+--- !u!114 &2742273267436195007
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: de3453e0d0391184c815d35447699279, type: 3}
+  m_Name: ModifyBlackboardValueBool
+  m_EditorClassIdentifier: 
+  state: 0
+  isStarted: 0
+  blackboard: {fileID: 0}
+  guid: 9f5750b326650a44a91ad8cf14bcc73a
+  position: {x: -118.00004, y: 301}
+  description: 
+  entryKey: isHungry
+  newValue: 0
+--- !u!114 &3021912662586103770
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ddd7b32a3a129bd4785fd4d155d35748, type: 3}
+  m_Name: RandomSelectorNode
+  m_EditorClassIdentifier: 
+  state: 0
+  isStarted: 0
+  blackboard: {fileID: 0}
+  guid: ea6f6cb36ea58f1489ee4af1dac61cc2
+  position: {x: -625, y: 301}
+  description: 
+  children:
+  - {fileID: -6742166226588519876}
+  - {fileID: 114886263052083999}
+  - {fileID: -1880818757473964252}
+--- !u!114 &3198187442178841407
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1ff6bae773798134ea68be5be9a3b8c2, type: 3}
+  m_Name: PlayAnimationNode
+  m_EditorClassIdentifier: 
+  state: 0
+  isStarted: 0
+  blackboard: {fileID: 0}
+  guid: 054be5678c85fac42a03c7d47a3fc69d
+  position: {x: -788, y: 301}
+  description: 
+  animationKey: Alpaca-Walk
 --- !u!114 &5270959654019460558
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -111,11 +369,34 @@ MonoBehaviour:
   m_Name: SequencerNode
   m_EditorClassIdentifier: 
   state: 0
-  isStarted: 0
+  isStarted: 1
   blackboard: {fileID: 0}
   guid: 98083ec60db69414889a5f739f474c3b
-  position: {x: 10, y: 168}
+  position: {x: 562.2273, y: 170.99995}
   description: 
   children:
-  - {fileID: -1640696180382344774}
   - {fileID: -9116032989936868884}
+  - {fileID: -3300959818044356595}
+  - {fileID: -9032769093373343941}
+  - {fileID: -4475876727588243741}
+  - {fileID: -8146482927272301512}
+--- !u!114 &8128667488227831029
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 35760d0d3923c8b4ea02b653ee9e51ae, type: 3}
+  m_Name: RangedDelayNode
+  m_EditorClassIdentifier: 
+  state: 0
+  isStarted: 0
+  blackboard: {fileID: 0}
+  guid: fd7f7fe68c964fb46a5ac379d09c82b4
+  position: {x: -285, y: 301}
+  description: 
+  minDuration: 10
+  maxDuration: 15
