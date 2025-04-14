@@ -18,7 +18,27 @@ MonoBehaviour:
   guid: 029a7a52c02e14e4b9d4e4dfa2fc11a4
   position: {x: 99, y: 329}
   description: 
-  animationKey: Alpaca-Idle
+  animationKey: Alpaca-Walk
+--- !u!114 &-5090152041240021558
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 35fc7a87a996db4458d5b764e7044887, type: 3}
+  m_Name: RepeaterNode
+  m_EditorClassIdentifier: 
+  state: 0
+  isStarted: 0
+  blackboard: {fileID: 0}
+  guid: 42d07885ca12ecd45b16e35614c03693
+  position: {x: 12, y: 40}
+  description: 
+  child: {fileID: 5270959654019460558}
+  repeatCount: -1
 --- !u!114 &-1640696180382344774
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -58,6 +78,7 @@ MonoBehaviour:
   - {fileID: -1640696180382344774}
   - {fileID: 5270959654019460558}
   - {fileID: -9116032989936868884}
+  - {fileID: -5090152041240021558}
 --- !u!114 &1616245187985775744
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -74,9 +95,9 @@ MonoBehaviour:
   isStarted: 0
   blackboard: {fileID: 0}
   guid: 1e048a4772949664fbc4157eb5fb0be3
-  position: {x: 8, y: 13}
+  position: {x: 13, y: -84.83999}
   description: 
-  child: {fileID: 5270959654019460558}
+  child: {fileID: -5090152041240021558}
 --- !u!114 &5270959654019460558
 MonoBehaviour:
   m_ObjectHideFlags: 0
