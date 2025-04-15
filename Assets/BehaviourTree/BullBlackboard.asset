@@ -17,8 +17,22 @@ MonoBehaviour:
   floatData:
     entries: []
   boolData:
-    entries: []
+    entries:
+    - key: isHungry
+      value: 1
+    - key: Rage
+      value: 0
   vector3Data:
-    entries: []
+    entries:
+    - key: RandomDestination
+      value: {x: 220.44215, y: 0.037337065, z: 365.98672}
+    - key: Hay
+      value: {x: 238, y: 0, z: 390}
+    - key: Trough
+      value: {x: 280, y: 0, z: 382}
+    - key: HayShed
+      value: {x: 162, y: 0, z: 338}
+    - key: Target
+      value: {x: 0, y: 0, z: 0}
   stringData:
     entries: []

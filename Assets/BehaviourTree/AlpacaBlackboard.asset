@@ -23,7 +23,7 @@ MonoBehaviour:
   vector3Data:
     entries:
     - key: RandomDestination
-      value: {x: 297.09677, y: 0.02088356, z: 362.80444}
+      value: {x: 232.78767, y: 0.02088356, z: 320.30054}
     - key: Hay
       value: {x: 252.79, y: 0, z: 398.09}
     - key: Trough

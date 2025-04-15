@@ -1,5 +1,105 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-6822188319192238684
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1ff6bae773798134ea68be5be9a3b8c2, type: 3}
+  m_Name: PlayAnimationNode
+  m_EditorClassIdentifier: 
+  state: 0
+  isStarted: 0
+  blackboard: {fileID: 0}
+  guid: 6cbd09e77c336f34181520abe9635a17
+  position: {x: -517.14374, y: 414.83398}
+  description: 
+  animationKey: Donkey-Eating
+--- !u!114 &-5312522646045685730
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ddd7b32a3a129bd4785fd4d155d35748, type: 3}
+  m_Name: RandomSelectorNode
+  m_EditorClassIdentifier: 
+  state: 0
+  isStarted: 0
+  blackboard: {fileID: 0}
+  guid: 619757d4549706742a6a1ef2165ab0c9
+  position: {x: -698.1438, y: 415.83395}
+  description: 
+  children:
+  - {fileID: 8038427087039606734}
+  - {fileID: 7599705959502970022}
+  - {fileID: 5429349724448511515}
+--- !u!114 &-4011568294558461334
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 35760d0d3923c8b4ea02b653ee9e51ae, type: 3}
+  m_Name: RangedDelayNode
+  m_EditorClassIdentifier: 
+  state: 0
+  isStarted: 0
+  blackboard: {fileID: 0}
+  guid: 5bcccd63b61747645ab73aff21166f52
+  position: {x: 879.06244, y: 414}
+  description: 
+  minDuration: 2
+  maxDuration: 5
+--- !u!114 &-3688194631397565316
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1ff6bae773798134ea68be5be9a3b8c2, type: 3}
+  m_Name: PlayAnimationNode
+  m_EditorClassIdentifier: 
+  state: 0
+  isStarted: 0
+  blackboard: {fileID: 0}
+  guid: 80631c84fe13b98419b4144f0004f4c2
+  position: {x: 154.06252, y: 412}
+  description: 
+  animationKey: Donkey-Walk
+--- !u!114 &-2573563508675816217
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 33b2385e8016d244dab298a94d10a405, type: 3}
+  m_Name: RandomizeDestinationNode
+  m_EditorClassIdentifier: 
+  state: 0
+  isStarted: 0
+  blackboard: {fileID: 0}
+  guid: 3ad9ef19d13387a4ca5381c1403299f0
+  position: {x: 321.06253, y: 413.00003}
+  description: 
+  destinationKey: RandomDestination
+  walkRadius: 75
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -17,9 +117,23 @@ MonoBehaviour:
   treeState: 0
   nodes:
   - {fileID: 1541266844657169789}
-  - {fileID: 4774125114446327344}
   - {fileID: 6248581591856786939}
   - {fileID: 516492241107945974}
+  - {fileID: 8597437740596926880}
+  - {fileID: 672703206024079563}
+  - {fileID: 9172069776659624721}
+  - {fileID: -3688194631397565316}
+  - {fileID: -2573563508675816217}
+  - {fileID: 7267050957193436044}
+  - {fileID: -4011568294558461334}
+  - {fileID: 3500146035911677646}
+  - {fileID: -5312522646045685730}
+  - {fileID: 7599705959502970022}
+  - {fileID: 5429349724448511515}
+  - {fileID: 8038427087039606734}
+  - {fileID: -6822188319192238684}
+  - {fileID: 2859393423148974881}
+  - {fileID: 7817539778901503320}
 --- !u!114 &516492241107945974
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -36,9 +150,30 @@ MonoBehaviour:
   isStarted: 0
   blackboard: {fileID: 0}
   guid: b7fac47c6283eff419c5c062384f8dab
-  position: {x: 137, y: 299}
+  position: {x: 693.06244, y: 416.00003}
   description: 
   animationKey: Donkey-Idle
+--- !u!114 &672703206024079563
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0b024b6495757224aa3b5cdc0f6a40ab, type: 3}
+  m_Name: ConditionNode
+  m_EditorClassIdentifier: 
+  state: 0
+  isStarted: 0
+  blackboard: {fileID: 0}
+  guid: 5d133d73b849cca48b6dbb33c86452f6
+  position: {x: -32, y: 102.999985}
+  description: 
+  childTrue: {fileID: 9172069776659624721}
+  childFalse: {fileID: 6248581591856786939}
+  conditionKey: isHungry
 --- !u!114 &1541266844657169789
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -55,10 +190,10 @@ MonoBehaviour:
   isStarted: 0
   blackboard: {fileID: 0}
   guid: 8762f3327e99ed249bb43a3753641861
-  position: {x: 0, y: 0}
+  position: {x: -3, y: -154}
   description: 
-  child: {fileID: 6248581591856786939}
---- !u!114 &4774125114446327344
+  child: {fileID: 8597437740596926880}
+--- !u!114 &2859393423148974881
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -67,16 +202,55 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8e15820ae1f346a409d8efcfec7c2656, type: 3}
-  m_Name: LogNode
+  m_Script: {fileID: 11500000, guid: 70ee36f45fb068346bc8e9dca5a90b4a, type: 3}
+  m_Name: DelayNode
   m_EditorClassIdentifier: 
   state: 0
   isStarted: 0
   blackboard: {fileID: 0}
-  guid: d282054a9c98b414dbf2b431fdf4837b
-  position: {x: -94, y: 300}
+  guid: 61ea5aa4eb033ae408c475e369e7f664
+  position: {x: -343.14386, y: 416.83395}
   description: 
-  message: I am a Donkey
+  duration: 10
+--- !u!114 &3500146035911677646
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1ff6bae773798134ea68be5be9a3b8c2, type: 3}
+  m_Name: PlayAnimationNode
+  m_EditorClassIdentifier: 
+  state: 0
+  isStarted: 0
+  blackboard: {fileID: 0}
+  guid: b4f95144c6800604aa7c1b63a0f686c0
+  position: {x: -875.1438, y: 411.83395}
+  description: 
+  animationKey: Donkey-Walk
+--- !u!114 &5429349724448511515
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a393320974134342a9d5f3c1f7849a0, type: 3}
+  m_Name: MoveToNode
+  m_EditorClassIdentifier: 
+  state: 0
+  isStarted: 0
+  blackboard: {fileID: 0}
+  guid: 671489a044a94054da88e67e7ad8cba3
+  position: {x: -535.1437, y: 592.834}
+  description: 
+  destinationKey: HayShed
+  tolerance: 1
 --- !u!114 &6248581591856786939
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -93,8 +267,135 @@ MonoBehaviour:
   isStarted: 0
   blackboard: {fileID: 0}
   guid: 95fc6e3d23ed63e419fff16f6d5d4ae0
-  position: {x: -1, y: 128}
+  position: {x: 511.99, y: 255.71}
   description: 
   children:
-  - {fileID: 4774125114446327344}
+  - {fileID: -3688194631397565316}
+  - {fileID: -2573563508675816217}
+  - {fileID: 7267050957193436044}
   - {fileID: 516492241107945974}
+  - {fileID: -4011568294558461334}
+--- !u!114 &7267050957193436044
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a393320974134342a9d5f3c1f7849a0, type: 3}
+  m_Name: MoveToNode
+  m_EditorClassIdentifier: 
+  state: 0
+  isStarted: 0
+  blackboard: {fileID: 0}
+  guid: 528a64c9b58837547aad472b12da43a0
+  position: {x: 513.0625, y: 413.00003}
+  description: 
+  destinationKey: RandomDestination
+  tolerance: 1
+--- !u!114 &7599705959502970022
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a393320974134342a9d5f3c1f7849a0, type: 3}
+  m_Name: MoveToNode
+  m_EditorClassIdentifier: 
+  state: 0
+  isStarted: 0
+  blackboard: {fileID: 0}
+  guid: cfbc57341388fc84a877c41da12b4ba6
+  position: {x: -699.1438, y: 593.834}
+  description: 
+  destinationKey: Trough
+  tolerance: 1
+--- !u!114 &7817539778901503320
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: de3453e0d0391184c815d35447699279, type: 3}
+  m_Name: ModifyBlackboardValueBool
+  m_EditorClassIdentifier: 
+  state: 0
+  isStarted: 0
+  blackboard: {fileID: 0}
+  guid: f43e45e193c7a9e4da46c73a52e09a3a
+  position: {x: -179.14383, y: 414.83398}
+  description: 
+  entryKey: isHungry
+  newValue: 0
+--- !u!114 &8038427087039606734
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a393320974134342a9d5f3c1f7849a0, type: 3}
+  m_Name: MoveToNode
+  m_EditorClassIdentifier: 
+  state: 0
+  isStarted: 0
+  blackboard: {fileID: 0}
+  guid: 884db743bebfadd4b8138cb4863ecb25
+  position: {x: -861.1438, y: 589.834}
+  description: 
+  destinationKey: Hay
+  tolerance: 1
+--- !u!114 &8597437740596926880
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 35fc7a87a996db4458d5b764e7044887, type: 3}
+  m_Name: RepeaterNode
+  m_EditorClassIdentifier: 
+  state: 0
+  isStarted: 0
+  blackboard: {fileID: 0}
+  guid: c8626f204c33150439e68e3c055770c0
+  position: {x: -3, y: -29}
+  description: 
+  child: {fileID: 672703206024079563}
+  repeatCount: -1
+--- !u!114 &9172069776659624721
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3996b50878de65743a31015986ad0e36, type: 3}
+  m_Name: SequencerNode
+  m_EditorClassIdentifier: 
+  state: 0
+  isStarted: 0
+  blackboard: {fileID: 0}
+  guid: b34a3b8197d3ee34ca5507a94094ea85
+  position: {x: -517.14374, y: 252.83392}
+  description: 
+  children:
+  - {fileID: 3500146035911677646}
+  - {fileID: -5312522646045685730}
+  - {fileID: -6822188319192238684}
+  - {fileID: 2859393423148974881}
+  - {fileID: 7817539778901503320}
