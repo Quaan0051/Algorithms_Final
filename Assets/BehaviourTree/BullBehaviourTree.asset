@@ -16,7 +16,7 @@ MonoBehaviour:
   isStarted: 0
   blackboard: {fileID: 0}
   guid: aedb672d7c0072e43866c9cf2e3100cb
-  position: {x: -499.1437, y: 607.247}
+  position: {x: -579.4542, y: 602.9773}
   description: 
   animationKey: Bull-Idle2
 --- !u!114 &-8767194820904424530
@@ -121,7 +121,7 @@ MonoBehaviour:
   isStarted: 0
   blackboard: {fileID: 0}
   guid: 8fa9ab7436d38b44bb66bcc675d810ed
-  position: {x: -1065.1437, y: 603.247}
+  position: {x: -922.45404, y: 605.9772}
   description: 
   animationKey: Bull-Gallop
 --- !u!114 &-5652408087655025514
@@ -160,10 +160,10 @@ MonoBehaviour:
   isStarted: 0
   blackboard: {fileID: 0}
   guid: bb8dd139cc562444ca5b3602e946c3fc
-  position: {x: -673.1437, y: 608.247}
+  position: {x: -753.45404, y: 603.9772}
   description: 
   destinationKey: Target
-  tolerance: 3
+  tolerance: 1
 --- !u!114 &-4123136739328641107
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -221,7 +221,7 @@ MonoBehaviour:
   isStarted: 0
   blackboard: {fileID: 0}
   guid: e4cfeabce08985447b043106eb492695
-  position: {x: -150.14374, y: 603.247}
+  position: {x: -230.45428, y: 598.9773}
   description: 
   entryKey: Rage
   newValue: 0
@@ -285,7 +285,7 @@ MonoBehaviour:
   position: {x: -21.95828, y: 244.833}
   description: 
   childTrue: {fileID: -8702529515770937831}
-  childFalse: {fileID: 0}
+  childFalse: {fileID: -3517377923914569350}
   conditionKey: Rage
 --- !u!114 &11400000
 MonoBehaviour:
@@ -403,7 +403,7 @@ MonoBehaviour:
   guid: 04ed04d91aa99904cbf0c1de300cb8be
   position: {x: 4.6449475, y: 93.29001}
   description: 
-  child: {fileID: -3517377923914569350}
+  child: {fileID: -596410540413660218}
   repeatCount: -1
 --- !u!114 &2972880417796190677
 MonoBehaviour:
@@ -481,7 +481,7 @@ MonoBehaviour:
   isStarted: 0
   blackboard: {fileID: 0}
   guid: abba76cce7d2c4645963cf3a76fdaa1e
-  position: {x: -318.14368, y: 606.247}
+  position: {x: -398.45404, y: 601.9772}
   description: 
   duration: 3
 --- !u!114 &5796683818387440284
