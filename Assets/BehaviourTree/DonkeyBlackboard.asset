@@ -20,10 +20,12 @@ MonoBehaviour:
     entries:
     - key: isHungry
       value: 0
+    - key: canKick
+      value: 0
   vector3Data:
     entries:
     - key: RandomDestination
-      value: {x: 304.05005, y: 0.02088356, z: 299.06418}
+      value: {x: 217.85802, y: 0.031356018, z: 376.31955}
     - key: Hay
       value: {x: 228, y: 0, z: 395}
     - key: Trough
