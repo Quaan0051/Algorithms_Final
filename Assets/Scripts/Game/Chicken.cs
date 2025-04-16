@@ -22,10 +22,16 @@ public class Chicken : Animal
 
     private void Update()
     {
-        AnimalType tempAnimal = CheckNearbyAnimals();
-        if(nearbyAnimal != tempAnimal)
+        Animal tempAnimal = CheckNearbyAnimals();
+        AnimalType tempAnimalType = AnimalType.None;
+        if (tempAnimal != null)
         {
-            nearbyAnimal = tempAnimal;
+            tempAnimalType = tempAnimal.GetAnimalType;
+        }
+
+        if(nearbyAnimal != tempAnimalType)
+        {
+            nearbyAnimal = tempAnimalType;
             switch (nearbyAnimal)
             {
                 case AnimalType.None:
@@ -35,7 +41,7 @@ public class Chicken : Animal
                 case AnimalType.Bull:
                 case AnimalType.Donkey:
                     blackboard.SetValue<bool>("CanPeck", false);
-                    target.speed = 15;
+                    target.speed = 30;
                     speed = 8;
                     cameraController.SetLookAt(transform.position, 5);
                     break;
@@ -54,11 +60,13 @@ public class Chicken : Animal
                 {
                     blackboard.SetValue<bool>("CanPeck", false);
                     speed = 8;
+                    target.speed = 8;
                 }
                 else
                 {
                     blackboard.SetValue<bool>("CanPeck", true);
                     speed = 0;
+                    target.speed = 0;
                 }
             }
         }

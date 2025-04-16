@@ -44,21 +44,21 @@ public class Animal : MonoBehaviour
         animator.Play(animationState);
     }
 
-    public AnimalType CheckNearbyAnimals()
+    public Animal CheckNearbyAnimals()
     {
         float closestDistance = float.PositiveInfinity;
-        AnimalType animalType = AnimalType.None;
+        Animal returnAnimal = null;
         foreach (Animal animal in animalsToAvoid)
         {
             float dist = Vector3.Distance(animal.transform.position, transform.position);
             if (dist < closestDistance && dist < animalDetectionDistance)
             {
                 closestDistance = dist;
-                animalType = animal.GetAnimalType;
+                returnAnimal = animal;
             }
         }
 
-        return animalType;
+        return returnAnimal;
     }
 
     protected void Initialize(AnimalSettings settings)
