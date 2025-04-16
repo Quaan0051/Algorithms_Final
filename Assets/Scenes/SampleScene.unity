@@ -7487,7 +7487,7 @@ MonoBehaviour:
   settings: {fileID: 11400000, guid: 4dbd8c38db73fe948a2a54c27f6b8bbb, type: 2}
   boidPrefab: {fileID: 2662103004925642877, guid: 8325a38b05a786443a171ea8ceebe8e1, type: 3}
   target: {fileID: 442705886}
-  boidsToSpawn: 1
+  boidsToSpawn: 5
   spawnRadius: 10
 --- !u!4 &314159155
 Transform:
@@ -10770,12 +10770,20 @@ PrefabInstance:
       objectReference: {fileID: 11400000, guid: d3e5f935341c3d645ba2cb32fcb402d3, type: 2}
     - target: {fileID: 2869715502239891797, guid: 0af4136405f8d0a41b2203895108a5d4, type: 3}
       propertyPath: animalsToAvoid.Array.size
-      value: 1
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 2869715502239891797, guid: 0af4136405f8d0a41b2203895108a5d4, type: 3}
       propertyPath: animalsToAvoid.Array.data[0]
       value: 
       objectReference: {fileID: 501319977}
+    - target: {fileID: 2869715502239891797, guid: 0af4136405f8d0a41b2203895108a5d4, type: 3}
+      propertyPath: animalsToAvoid.Array.data[1]
+      value: 
+      objectReference: {fileID: 460660128}
+    - target: {fileID: 2869715502239891797, guid: 0af4136405f8d0a41b2203895108a5d4, type: 3}
+      propertyPath: animalsToAvoid.Array.data[2]
+      value: 
+      objectReference: {fileID: 769476181}
     - target: {fileID: 4027667219516275348, guid: 0af4136405f8d0a41b2203895108a5d4, type: 3}
       propertyPath: path
       value: 
@@ -11437,6 +11445,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 681067903784995091, guid: ac0ec0b3e25c5a14698c716c3661a4f1, type: 3}
   m_PrefabInstance: {fileID: 458632425}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &460660128 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7263213551964131134, guid: 9daccdc63a237c140bc8de87083bf6e8, type: 3}
+  m_PrefabInstance: {fileID: 7453094733895864689}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b9e61ad8b8f2e5e4a8be6c80d849c963, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &460900778
 GameObject:
   m_ObjectHideFlags: 0
@@ -21846,6 +21865,17 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 6068135822801470431, guid: 0af4136405f8d0a41b2203895108a5d4, type: 3}
   m_PrefabInstance: {fileID: 442705885}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &809725206 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2869715502239891797, guid: 0af4136405f8d0a41b2203895108a5d4, type: 3}
+  m_PrefabInstance: {fileID: 442705885}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 809725204}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 709dca951fa628e4faae82be16693c49, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &811939579
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -23636,12 +23666,20 @@ PrefabInstance:
       objectReference: {fileID: 11400000, guid: faa3c7021a1dc654fbd31890ff3a35e4, type: 2}
     - target: {fileID: 2869715502239891797, guid: 0af4136405f8d0a41b2203895108a5d4, type: 3}
       propertyPath: animalsToAvoid.Array.size
-      value: 1
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 2869715502239891797, guid: 0af4136405f8d0a41b2203895108a5d4, type: 3}
       propertyPath: animalsToAvoid.Array.data[0]
       value: 
       objectReference: {fileID: 501319977}
+    - target: {fileID: 2869715502239891797, guid: 0af4136405f8d0a41b2203895108a5d4, type: 3}
+      propertyPath: animalsToAvoid.Array.data[1]
+      value: 
+      objectReference: {fileID: 460660128}
+    - target: {fileID: 2869715502239891797, guid: 0af4136405f8d0a41b2203895108a5d4, type: 3}
+      propertyPath: animalsToAvoid.Array.data[2]
+      value: 
+      objectReference: {fileID: 769476181}
     - target: {fileID: 4027667219516275348, guid: 0af4136405f8d0a41b2203895108a5d4, type: 3}
       propertyPath: path
       value: 
@@ -23675,6 +23713,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 2438239335028945666, guid: 0af4136405f8d0a41b2203895108a5d4, type: 3}
   m_PrefabInstance: {fileID: 886344451}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &886344457 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2869715502239891797, guid: 0af4136405f8d0a41b2203895108a5d4, type: 3}
+  m_PrefabInstance: {fileID: 886344451}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 268586631}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 709dca951fa628e4faae82be16693c49, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &888698525
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -32667,7 +32716,7 @@ MonoBehaviour:
   settings: {fileID: 11400000, guid: 2bc81a07f39a6b14ea73b423191b4315, type: 2}
   boidPrefab: {fileID: 2662103004925642877, guid: 8325a38b05a786443a171ea8ceebe8e1, type: 3}
   target: {fileID: 886344452}
-  boidsToSpawn: 1
+  boidsToSpawn: 5
   spawnRadius: 10
 --- !u!4 &1190991823
 Transform:
@@ -43929,7 +43978,7 @@ MonoBehaviour:
   settings: {fileID: 11400000, guid: a7bdc8d5cf05e0744ae32bd65dd2d8f9, type: 2}
   boidPrefab: {fileID: 2662103004925642877, guid: 8325a38b05a786443a171ea8ceebe8e1, type: 3}
   target: {fileID: 324049045}
-  boidsToSpawn: 1
+  boidsToSpawn: 5
   spawnRadius: 10
 --- !u!4 &1641502061
 Transform:
@@ -48732,6 +48781,17 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 6068135822801470431, guid: 0af4136405f8d0a41b2203895108a5d4, type: 3}
   m_PrefabInstance: {fileID: 7770279898863320237}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1820571610 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2869715502239891797, guid: 0af4136405f8d0a41b2203895108a5d4, type: 3}
+  m_PrefabInstance: {fileID: 7770279898863320237}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1820571608}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 709dca951fa628e4faae82be16693c49, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1824698190
 GameObject:
   m_ObjectHideFlags: 0
@@ -59259,6 +59319,30 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 7263213551964131134, guid: 9daccdc63a237c140bc8de87083bf6e8, type: 3}
+      propertyPath: animalsToAvoid.Array.size
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7263213551964131134, guid: 9daccdc63a237c140bc8de87083bf6e8, type: 3}
+      propertyPath: animalsToAvoid.Array.data[0]
+      value: 
+      objectReference: {fileID: 501319977}
+    - target: {fileID: 7263213551964131134, guid: 9daccdc63a237c140bc8de87083bf6e8, type: 3}
+      propertyPath: animalsToAvoid.Array.data[1]
+      value: 
+      objectReference: {fileID: 1820571610}
+    - target: {fileID: 7263213551964131134, guid: 9daccdc63a237c140bc8de87083bf6e8, type: 3}
+      propertyPath: animalsToAvoid.Array.data[2]
+      value: 
+      objectReference: {fileID: 809725206}
+    - target: {fileID: 7263213551964131134, guid: 9daccdc63a237c140bc8de87083bf6e8, type: 3}
+      propertyPath: animalsToAvoid.Array.data[3]
+      value: 
+      objectReference: {fileID: 886344457}
+    - target: {fileID: 7263213551964131134, guid: 9daccdc63a237c140bc8de87083bf6e8, type: 3}
+      propertyPath: animalsToAvoid.Array.data[4]
+      value: 
+      objectReference: {fileID: 769476181}
     - target: {fileID: 7550108215219970587, guid: 9daccdc63a237c140bc8de87083bf6e8, type: 3}
       propertyPath: m_LocalPosition.x
       value: 314.9
@@ -59374,12 +59458,20 @@ PrefabInstance:
       objectReference: {fileID: 769476181}
     - target: {fileID: 2869715502239891797, guid: 0af4136405f8d0a41b2203895108a5d4, type: 3}
       propertyPath: animalsToAvoid.Array.size
-      value: 1
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 2869715502239891797, guid: 0af4136405f8d0a41b2203895108a5d4, type: 3}
       propertyPath: animalsToAvoid.Array.data[0]
       value: 
       objectReference: {fileID: 501319977}
+    - target: {fileID: 2869715502239891797, guid: 0af4136405f8d0a41b2203895108a5d4, type: 3}
+      propertyPath: animalsToAvoid.Array.data[1]
+      value: 
+      objectReference: {fileID: 460660128}
+    - target: {fileID: 2869715502239891797, guid: 0af4136405f8d0a41b2203895108a5d4, type: 3}
+      propertyPath: animalsToAvoid.Array.data[2]
+      value: 
+      objectReference: {fileID: 769476181}
     - target: {fileID: 4027667219516275348, guid: 0af4136405f8d0a41b2203895108a5d4, type: 3}
       propertyPath: path
       value: 

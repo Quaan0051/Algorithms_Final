@@ -6,7 +6,7 @@ public class RotationNode : ActionNode
 {
     public float rotation;
     private float current;
-    private float lerpPercent;
+    private float lerpPercent = 0.0f;
 
     protected override void OnStart()
     {

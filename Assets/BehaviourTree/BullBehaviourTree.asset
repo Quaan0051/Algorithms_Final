@@ -16,7 +16,7 @@ MonoBehaviour:
   isStarted: 0
   blackboard: {fileID: 0}
   guid: aedb672d7c0072e43866c9cf2e3100cb
-  position: {x: -579.4542, y: 602.9773}
+  position: {x: -484.55374, y: 596.00397}
   description: 
   animationKey: Bull-Idle2
 --- !u!114 &-8767194820904424530
@@ -57,6 +57,7 @@ MonoBehaviour:
   position: {x: -578.9574, y: 424.68698}
   description: 
   children:
+  - {fileID: -3927156856720693657}
   - {fileID: -6147687694404682694}
   - {fileID: -5575653282786966241}
   - {fileID: -8992632377275044873}
@@ -182,7 +183,7 @@ MonoBehaviour:
   isStarted: 0
   blackboard: {fileID: 0}
   guid: 8fa9ab7436d38b44bb66bcc675d810ed
-  position: {x: -922.45404, y: 605.9772}
+  position: {x: -827.55365, y: 599.00397}
   description: 
   animationKey: Bull-Gallop
 --- !u!114 &-5652408087655025514
@@ -221,7 +222,7 @@ MonoBehaviour:
   isStarted: 0
   blackboard: {fileID: 0}
   guid: bb8dd139cc562444ca5b3602e946c3fc
-  position: {x: -753.45404, y: 603.9772}
+  position: {x: -658.5537, y: 597.0039}
   description: 
   destinationKey: Target
   tolerance: 1
@@ -245,6 +246,26 @@ MonoBehaviour:
   description: 
   destinationKey: RandomDestination
   walkRadius: 75
+--- !u!114 &-3927156856720693657
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 72bc747331e08d843b35c5506db88b30, type: 3}
+  m_Name: FocusTargetCameraNode
+  m_EditorClassIdentifier: 
+  state: 0
+  isStarted: 0
+  blackboard: {fileID: 0}
+  guid: ceb930a517d95914480af274f0e1462c
+  position: {x: -1012.55365, y: 599.00397}
+  description: 
+  duration: 3
+  target: Target
 --- !u!114 &-3530249544352695018
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -301,7 +322,7 @@ MonoBehaviour:
   isStarted: 0
   blackboard: {fileID: 0}
   guid: e4cfeabce08985447b043106eb492695
-  position: {x: -230.45428, y: 598.9773}
+  position: {x: -135.55379, y: 592.0039}
   description: 
   entryKey: Rage
   newValue: 0
@@ -414,6 +435,7 @@ MonoBehaviour:
   - {fileID: -7725776813640078113}
   - {fileID: 3671101850384752318}
   - {fileID: -6362084888067867778}
+  - {fileID: -3927156856720693657}
 --- !u!114 &994570369110302134
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -607,7 +629,7 @@ MonoBehaviour:
   isStarted: 0
   blackboard: {fileID: 0}
   guid: abba76cce7d2c4645963cf3a76fdaa1e
-  position: {x: -398.45404, y: 601.9772}
+  position: {x: -303.5536, y: 595.00397}
   description: 
   duration: 3
 --- !u!114 &5796683818387440284

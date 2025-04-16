@@ -19,13 +19,13 @@ MonoBehaviour:
   boolData:
     entries:
     - key: isHungry
-      value: 0
+      value: 1
     - key: Rage
       value: 0
   vector3Data:
     entries:
     - key: RandomDestination
-      value: {x: 179.99057, y: 0.02088356, z: 314.81204}
+      value: {x: 281.51617, y: 0.02088356, z: 370.2467}
     - key: Hay
       value: {x: 238, y: 0, z: 390}
     - key: Trough
@@ -33,6 +33,6 @@ MonoBehaviour:
     - key: HayShed
       value: {x: 162, y: 0, z: 338}
     - key: Target
-      value: {x: 315.96777, y: 0.18345642, z: 361.3626}
+      value: {x: 205.54376, y: 0.18345642, z: 260.20312}
   stringData:
     entries: []

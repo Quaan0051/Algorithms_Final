@@ -21,6 +21,25 @@ MonoBehaviour:
   childTrue: {fileID: -4258888217861997208}
   childFalse: {fileID: 672703206024079563}
   conditionKey: canKick
+--- !u!114 &-7184166873826641554
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 309eb728f7c35264cb677a9b8ddc1769, type: 3}
+  m_Name: FocusCameraNode
+  m_EditorClassIdentifier: 
+  state: 0
+  isStarted: 0
+  blackboard: {fileID: 0}
+  guid: 21eb52d463edfaa428e895527f5415e9
+  position: {x: -1006.7188, y: 386.32004}
+  description: 
+  duration: 2
 --- !u!114 &-6822188319192238684
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -56,9 +75,28 @@ MonoBehaviour:
   isStarted: 0
   blackboard: {fileID: 0}
   guid: 274f62384b8b46b4695d55ee5fc38862
-  position: {x: -704, y: 384}
+  position: {x: -832.7189, y: 387.32004}
   description: 
   animationKey: Donkey-AttackKick
+--- !u!114 &-6155809951712784407
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 70ee36f45fb068346bc8e9dca5a90b4a, type: 3}
+  m_Name: DelayNode
+  m_EditorClassIdentifier: 
+  state: 0
+  isStarted: 0
+  blackboard: {fileID: 0}
+  guid: 1fd48c62d95f3ce46a7a391efc9fcb9b
+  position: {x: -657.7189, y: 388.32007}
+  description: 
+  duration: 1
 --- !u!114 &-5312522646045685730
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -97,11 +135,33 @@ MonoBehaviour:
   isStarted: 0
   blackboard: {fileID: 0}
   guid: 89b9ce35ddb9a754b830e7331e095063
-  position: {x: -607.15765, y: 242.68695}
+  position: {x: -656.71893, y: 246.32004}
   description: 
   children:
+  - {fileID: -7184166873826641554}
   - {fileID: -6243950314903146142}
+  - {fileID: -6155809951712784407}
   - {fileID: 6391587770825844476}
+  - {fileID: -4087119641171120436}
+--- !u!114 &-4087119641171120436
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1ff6bae773798134ea68be5be9a3b8c2, type: 3}
+  m_Name: PlayAnimationNode
+  m_EditorClassIdentifier: 
+  state: 0
+  isStarted: 0
+  blackboard: {fileID: 0}
+  guid: 0b09fdd9909a28d4683df9784233df84
+  position: {x: -263.7188, y: 391.32007}
+  description: 
+  animationKey: Donkey-Walk
 --- !u!114 &-4011568294558461334
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -266,6 +326,9 @@ MonoBehaviour:
   - {fileID: -6243950314903146142}
   - {fileID: 6391587770825844476}
   - {fileID: -4258888217861997208}
+  - {fileID: -7184166873826641554}
+  - {fileID: -6155809951712784407}
+  - {fileID: -4087119641171120436}
 --- !u!114 &516492241107945974
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -461,9 +524,9 @@ MonoBehaviour:
   isStarted: 0
   blackboard: {fileID: 0}
   guid: a69b0321e9850a34d943c7b56536bb3d
-  position: {x: -527, y: 385}
+  position: {x: -489.7189, y: 389.32}
   description: 
-  entryKey: can Kick
+  entryKey: canKick
   newValue: 0
 --- !u!114 &7267050957193436044
 MonoBehaviour:
