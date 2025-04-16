@@ -25,7 +25,7 @@ MonoBehaviour:
   vector3Data:
     entries:
     - key: RandomDestination
-      value: {x: 179.99057, y: 0.02088356, z: 314.81204}
+      value: {x: 307.89035, y: 0.0690531, z: 316.2978}
     - key: Hay
       value: {x: 238, y: 0, z: 390}
     - key: Trough
@@ -33,6 +33,6 @@ MonoBehaviour:
     - key: HayShed
       value: {x: 162, y: 0, z: 338}
     - key: Target
-      value: {x: 315.96777, y: 0.18345642, z: 361.3626}
+      value: {x: 310.58704, y: 0.1834564, z: 346.93155}
   stringData:
     entries: []

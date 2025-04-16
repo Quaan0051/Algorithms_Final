@@ -43,7 +43,6 @@ public class Chicken : Animal
                     blackboard.SetValue<bool>("CanPeck", false);
                     target.speed = 30;
                     speed = 8;
-                    cameraController.SetLookAt(transform.position, 5);
                     break;
             }
         }

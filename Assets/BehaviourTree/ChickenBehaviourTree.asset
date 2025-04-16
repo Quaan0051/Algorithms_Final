@@ -32,7 +32,7 @@ MonoBehaviour:
   m_Name: RootNode
   m_EditorClassIdentifier: 
   state: 0
-  isStarted: 0
+  isStarted: 1
   blackboard: {fileID: 0}
   guid: e724fe5fb239334498a52503830ccbe0
   position: {x: 1.0140038, y: -213.87357}
@@ -72,7 +72,7 @@ MonoBehaviour:
   m_Name: RepeaterNode
   m_EditorClassIdentifier: 
   state: 0
-  isStarted: 0
+  isStarted: 1
   blackboard: {fileID: 0}
   guid: 35884477f05009f448b56dbfe3697d1f
   position: {x: 0.98624855, y: -121.94433}
@@ -116,6 +116,6 @@ MonoBehaviour:
   guid: fecdb0f6b85e4394dae1df25c20d2802
   position: {x: -28, y: -10}
   description: 
-  childTrue: {fileID: 0}
-  childFalse: {fileID: 0}
+  childTrue: {fileID: -2338694728718948583}
+  childFalse: {fileID: 7919350921020202444}
   conditionKey: CanPeck

@@ -34,5 +34,8 @@ public class Alpaca : Animal
     {
         Initialize(settings);
         HungryTimer = Random.Range(30.0f, 60.0f);
+
+        blackboard.SetOrAddValue("isHungry", false);
+        blackboard.SetOrAddValue("canHawkTuah", false);
     }
 }
