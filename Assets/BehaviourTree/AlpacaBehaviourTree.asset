@@ -99,7 +99,7 @@ MonoBehaviour:
   isStarted: 0
   blackboard: {fileID: 0}
   guid: a357f602162be474498b12676f2f8510
-  position: {x: -799.9999, y: 433.99994}
+  position: {x: -840.0907, y: 461.75504}
   description: 
   destinationKey: Hay
   tolerance: 1
@@ -198,7 +198,7 @@ MonoBehaviour:
   isStarted: 0
   blackboard: {fileID: 0}
   guid: de9ae8e839ead634d83d3b369cb36564
-  position: {x: -455.99997, y: 433.99994}
+  position: {x: -309.5153, y: 466.3809}
   description: 
   destinationKey: HayShed
   tolerance: 1
@@ -252,7 +252,7 @@ MonoBehaviour:
   isStarted: 0
   blackboard: {fileID: 0}
   guid: 1c0cc53777eb1f5498a8ce45cc4d7f0b
-  position: {x: -625, y: 433.99994}
+  position: {x: -540.28357, y: 594.45807}
   description: 
   destinationKey: Trough
   tolerance: 1
