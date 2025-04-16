@@ -10,6 +10,8 @@ public class Donkey : Animal
 
     private float HungryTimer;
 
+    AnimalType nearbyAnimal = AnimalType.None;
+
     private void Awake()
     {
         animalType = AnimalType.Donkey;
@@ -18,6 +20,9 @@ public class Donkey : Animal
     // Update is called once per frame
     void Update()
     {
+
+
+        //check hunger
         if (HungryTimer >= 0.0f && blackboard.GetValue<bool>("isHungry") == false)
         {
             HungryTimer -= Time.deltaTime;
@@ -32,6 +37,7 @@ public class Donkey : Animal
     protected override void OnStart()
     {
         Initialize(settings);
+        blackboard.SetValue<bool>("isHungry", false);
         HungryTimer = Random.Range(15.0f, 30.0f);
     }
 }
