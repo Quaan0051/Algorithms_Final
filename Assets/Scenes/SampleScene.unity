@@ -7487,7 +7487,7 @@ MonoBehaviour:
   settings: {fileID: 11400000, guid: 4dbd8c38db73fe948a2a54c27f6b8bbb, type: 2}
   boidPrefab: {fileID: 2662103004925642877, guid: 8325a38b05a786443a171ea8ceebe8e1, type: 3}
   target: {fileID: 442705886}
-  boidsToSpawn: 20
+  boidsToSpawn: 1
   spawnRadius: 10
 --- !u!4 &314159155
 Transform:
@@ -10768,6 +10768,14 @@ PrefabInstance:
       propertyPath: blackboard
       value: 
       objectReference: {fileID: 11400000, guid: d3e5f935341c3d645ba2cb32fcb402d3, type: 2}
+    - target: {fileID: 2869715502239891797, guid: 0af4136405f8d0a41b2203895108a5d4, type: 3}
+      propertyPath: animalsToAvoid.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2869715502239891797, guid: 0af4136405f8d0a41b2203895108a5d4, type: 3}
+      propertyPath: animalsToAvoid.Array.data[0]
+      value: 
+      objectReference: {fileID: 501319977}
     - target: {fileID: 4027667219516275348, guid: 0af4136405f8d0a41b2203895108a5d4, type: 3}
       propertyPath: path
       value: 
@@ -12730,6 +12738,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 8860170978775542278, guid: e95b53dd29a64644695a929be4430235, type: 3}
   m_PrefabInstance: {fileID: 498213851}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &501319977 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8377575696591763147, guid: 02dfa8c11decbf54ba6cdd046343713d, type: 3}
+  m_PrefabInstance: {fileID: 4597099207230985517}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 624cec580f7bef14080254c45b6fbb03, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &504055259
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -23615,6 +23634,14 @@ PrefabInstance:
       propertyPath: blackboard
       value: 
       objectReference: {fileID: 11400000, guid: faa3c7021a1dc654fbd31890ff3a35e4, type: 2}
+    - target: {fileID: 2869715502239891797, guid: 0af4136405f8d0a41b2203895108a5d4, type: 3}
+      propertyPath: animalsToAvoid.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2869715502239891797, guid: 0af4136405f8d0a41b2203895108a5d4, type: 3}
+      propertyPath: animalsToAvoid.Array.data[0]
+      value: 
+      objectReference: {fileID: 501319977}
     - target: {fileID: 4027667219516275348, guid: 0af4136405f8d0a41b2203895108a5d4, type: 3}
       propertyPath: path
       value: 
@@ -25838,6 +25865,7 @@ MonoBehaviour:
   path: {fileID: 1763465205}
   cameraTarget: {fileID: 1710247017}
   startingIndex: 0
+  targetFOV: 30
 --- !u!1001 &966012931
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -32639,7 +32667,7 @@ MonoBehaviour:
   settings: {fileID: 11400000, guid: 2bc81a07f39a6b14ea73b423191b4315, type: 2}
   boidPrefab: {fileID: 2662103004925642877, guid: 8325a38b05a786443a171ea8ceebe8e1, type: 3}
   target: {fileID: 886344452}
-  boidsToSpawn: 20
+  boidsToSpawn: 1
   spawnRadius: 10
 --- !u!4 &1190991823
 Transform:
@@ -43901,7 +43929,7 @@ MonoBehaviour:
   settings: {fileID: 11400000, guid: a7bdc8d5cf05e0744ae32bd65dd2d8f9, type: 2}
   boidPrefab: {fileID: 2662103004925642877, guid: 8325a38b05a786443a171ea8ceebe8e1, type: 3}
   target: {fileID: 324049045}
-  boidsToSpawn: 20
+  boidsToSpawn: 1
   spawnRadius: 10
 --- !u!4 &1641502061
 Transform:
@@ -59344,6 +59372,14 @@ PrefabInstance:
       propertyPath: alpaca
       value: 
       objectReference: {fileID: 769476181}
+    - target: {fileID: 2869715502239891797, guid: 0af4136405f8d0a41b2203895108a5d4, type: 3}
+      propertyPath: animalsToAvoid.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2869715502239891797, guid: 0af4136405f8d0a41b2203895108a5d4, type: 3}
+      propertyPath: animalsToAvoid.Array.data[0]
+      value: 
+      objectReference: {fileID: 501319977}
     - target: {fileID: 4027667219516275348, guid: 0af4136405f8d0a41b2203895108a5d4, type: 3}
       propertyPath: path
       value: 

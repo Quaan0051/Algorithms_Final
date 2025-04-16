@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -8,17 +9,22 @@ public class CameraController : MonoBehaviour
     public CatmullRomPath path;
     public Transform cameraTarget;
     public int startingIndex = 0;
+    public float targetFOV = 10.0f;
 
     private new Camera camera;
     private const float kSpeed = 20.0f;
     private float movement = 1.0f;
     private int currentIndex = 0;
+    private float lerpPerc = 1.0f;
+    private float timer = 0.0f;
+    private float zoomSpeed = 0.5f;
+    private Vector3 lookAtTarget = Vector3.zero;
 
     // Start is called before the first frame update
     void Start()
     {
         camera = GetComponent<Camera>();
-
+        
         if (startingIndex >= 0 && startingIndex < path.Points.Count)
             currentIndex = startingIndex;
 
@@ -30,6 +36,31 @@ public class CameraController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (lookAtTarget != Vector3.zero && lerpPerc <= 1.0f)
+        {
+            camera.fieldOfView = Mathf.Lerp(camera.fieldOfView, targetFOV, lerpPerc);
+            lerpPerc += Time.deltaTime * zoomSpeed;
+        }
+        else if (lerpPerc <= 1.0f)
+        {
+            camera.fieldOfView = Mathf.Lerp(camera.fieldOfView, 60.0f, lerpPerc);
+            lerpPerc += Time.deltaTime * zoomSpeed;
+        }
+
+        if (timer > 0.0f)
+        {
+            timer -= Time.deltaTime;
+            if (timer <= 0.0f)
+            {
+                Vector3 location = path.Points[currentIndex];
+                camera.transform.position = location;
+                camera.transform.rotation = Quaternion.LookRotation(cameraTarget.position - location);
+                lookAtTarget = Vector3.zero;
+                lerpPerc = 0.0f;
+                movement = 1.0f;
+            }
+        }
+
         if (movement > 0.0f)
         {
             HandleForwardMovement();
@@ -37,6 +68,18 @@ public class CameraController : MonoBehaviour
         else if (movement < 0.0f)
         {
             HandleBackwardMovement();
+        }
+    }
+
+    public void SetLookAt(Vector3 target, float duration)
+    {
+        if (timer <= 0.0f && lerpPerc >= 1.0f)
+        {
+            lookAtTarget = target;
+            timer = duration;
+            movement = 0.0f;
+            lerpPerc = 0.0f;
+            transform.LookAt(lookAtTarget);
         }
     }
 

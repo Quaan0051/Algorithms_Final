@@ -80,6 +80,7 @@ MonoBehaviour:
   children:
   - {fileID: 3198187442178841407}
   - {fileID: 3021912662586103770}
+  - {fileID: -1567009165603376730}
   - {fileID: -6184311679374015585}
   - {fileID: 8128667488227831029}
   - {fileID: 2742273267436195007}
@@ -99,7 +100,7 @@ MonoBehaviour:
   isStarted: 0
   blackboard: {fileID: 0}
   guid: a357f602162be474498b12676f2f8510
-  position: {x: -799.9999, y: 433.99994}
+  position: {x: -966.12024, y: 433.99997}
   description: 
   destinationKey: Hay
   tolerance: 1
@@ -119,7 +120,7 @@ MonoBehaviour:
   isStarted: 0
   blackboard: {fileID: 0}
   guid: 5aff26a0fcf228041995d291f72d6685
-  position: {x: -455.99997, y: 301}
+  position: {x: -456, y: 300.99997}
   description: 
   animationKey: Alpaca-Eating
 --- !u!114 &-4475876727588243741
@@ -198,10 +199,29 @@ MonoBehaviour:
   isStarted: 0
   blackboard: {fileID: 0}
   guid: de9ae8e839ead634d83d3b369cb36564
-  position: {x: -455.99997, y: 433.99994}
+  position: {x: -622.12036, y: 433.99997}
   description: 
   destinationKey: HayShed
   tolerance: 1
+--- !u!114 &-1567009165603376730
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 309eb728f7c35264cb677a9b8ddc1769, type: 3}
+  m_Name: FocusCameraNode
+  m_EditorClassIdentifier: 
+  state: 0
+  isStarted: 0
+  blackboard: {fileID: 0}
+  guid: 4bdd57ec129d4924fb26dd6c89bf8778
+  position: {x: -622.12036, y: 300.99997}
+  description: 
+  duration: 5
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -236,6 +256,7 @@ MonoBehaviour:
   - {fileID: -6184311679374015585}
   - {fileID: 8128667488227831029}
   - {fileID: 2742273267436195007}
+  - {fileID: -1567009165603376730}
 --- !u!114 &114886263052083999
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -252,7 +273,7 @@ MonoBehaviour:
   isStarted: 0
   blackboard: {fileID: 0}
   guid: 1c0cc53777eb1f5498a8ce45cc4d7f0b
-  position: {x: -625, y: 433.99994}
+  position: {x: -791.12036, y: 433.99997}
   description: 
   destinationKey: Trough
   tolerance: 1
@@ -311,7 +332,7 @@ MonoBehaviour:
   isStarted: 0
   blackboard: {fileID: 0}
   guid: 9f5750b326650a44a91ad8cf14bcc73a
-  position: {x: -118.00004, y: 301}
+  position: {x: -120.870125, y: 300.99997}
   description: 
   entryKey: isHungry
   newValue: 0
@@ -331,7 +352,7 @@ MonoBehaviour:
   isStarted: 0
   blackboard: {fileID: 0}
   guid: ea6f6cb36ea58f1489ee4af1dac61cc2
-  position: {x: -625, y: 301}
+  position: {x: -791.12036, y: 300.99997}
   description: 
   children:
   - {fileID: -6742166226588519876}
@@ -353,7 +374,7 @@ MonoBehaviour:
   isStarted: 0
   blackboard: {fileID: 0}
   guid: 054be5678c85fac42a03c7d47a3fc69d
-  position: {x: -788, y: 301}
+  position: {x: -954.1203, y: 300.99997}
   description: 
   animationKey: Alpaca-Walk
 --- !u!114 &5270959654019460558
@@ -396,7 +417,7 @@ MonoBehaviour:
   isStarted: 0
   blackboard: {fileID: 0}
   guid: fd7f7fe68c964fb46a5ac379d09c82b4
-  position: {x: -285, y: 301}
+  position: {x: -287.87012, y: 300.99997}
   description: 
   minDuration: 10
   maxDuration: 15

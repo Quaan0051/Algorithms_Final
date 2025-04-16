@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using UnityEditor.Rendering;
 using UnityEngine;
 
 
@@ -9,7 +10,10 @@ public class Chicken : Animal
 
     Target target;
 
+    float speed = 8;
+
     float Timer;
+    AnimalType nearbyAnimal = AnimalType.None;
 
     private void Awake()
     {
@@ -18,6 +22,26 @@ public class Chicken : Animal
 
     private void Update()
     {
+        AnimalType tempAnimal = CheckNearbyAnimals();
+        if(nearbyAnimal != tempAnimal)
+        {
+            nearbyAnimal = tempAnimal;
+            switch (nearbyAnimal)
+            {
+                case AnimalType.None:
+                    target.speed = speed;
+                    break;
+                case AnimalType.Alpaca:
+                case AnimalType.Bull:
+                case AnimalType.Donkey:
+                    blackboard.SetValue<bool>("CanPeck", false);
+                    target.speed = 15;
+                    speed = 8;
+                    cameraController.SetLookAt(transform.position, 5);
+                    break;
+            }
+        }
+        
         if (Timer > 0.0f)
         {
             Timer -= Time.deltaTime;
@@ -29,12 +53,12 @@ public class Chicken : Animal
                 if (target.speed == 0)
                 {
                     blackboard.SetValue<bool>("CanPeck", false);
-                    target.speed = 8;
+                    speed = 8;
                 }
                 else
                 {
                     blackboard.SetValue<bool>("CanPeck", true);
-                    target.speed = 0;
+                    speed = 0;
                 }
             }
         }
@@ -54,6 +78,8 @@ public class Chicken : Animal
         blackboard.SetOrAddValue<bool>("CanPeck", false);
         blackboard.SetOrAddValue<float>("Speed", 8.0f);
         target = GetComponent<Target>();
+
+        animalDetectionDistance = 30.0f;
 
         Timer = Random.Range(5.0f, 10.0f);
     }

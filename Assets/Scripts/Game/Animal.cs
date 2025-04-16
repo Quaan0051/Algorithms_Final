@@ -2,9 +2,11 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
+using UnityEngine.UIElements;
 
 public enum AnimalType
 {
+    None,
     Chicken,
     Chick,
     Alpaca,
@@ -15,7 +17,11 @@ public enum AnimalType
 
 public class Animal : MonoBehaviour
 {
+    public List<Animal> animalsToAvoid;
+
+    protected float animalDetectionDistance;
     protected AnimalType animalType;
+    protected CameraController cameraController;
 
     public AnimalType GetAnimalType
     {
@@ -29,13 +35,30 @@ public class Animal : MonoBehaviour
     void Start()
     {
         OnStart();
-
+        cameraController = Camera.main.GetComponent<CameraController>();
         animator = GetComponentInChildren<Animator>();
     }
 
     public void PlayAnimation(string animationState)
     {
         animator.Play(animationState);
+    }
+
+    public AnimalType CheckNearbyAnimals()
+    {
+        float closestDistance = float.PositiveInfinity;
+        AnimalType animalType = AnimalType.None;
+        foreach (Animal animal in animalsToAvoid)
+        {
+            float dist = Vector3.Distance(animal.transform.position, transform.position);
+            if (dist < closestDistance && dist < animalDetectionDistance)
+            {
+                closestDistance = dist;
+                animalType = animal.GetAnimalType;
+            }
+        }
+
+        return animalType;
     }
 
     protected void Initialize(AnimalSettings settings)

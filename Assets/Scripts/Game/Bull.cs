@@ -32,6 +32,7 @@ public class Bull : Animal
             if (RageTimer <= 0.0f)
             {
                 blackboard.SetValue<bool>("Rage", true);
+                agent.speed = 100.0f;
 
                 //choose rand chicken
                 TargetNum = Random.Range(1.0f, 3.0f);
@@ -73,8 +74,11 @@ public class Bull : Animal
     protected override void OnStart()
     {
         Initialize(settings);
+
         HungryTimer = Random.Range(40.0f, 60.0f);
         RageTimer = Random.Range(10.0f, 30.0f);
+
+        blackboard.SetOrAddValue<bool>("Rage", false);
 
         Target.x = 225;
         Target.z = 325;
