@@ -121,7 +121,10 @@ public class Flock : MonoBehaviour
                     boids[i].Cohesion = boidData[i].cohesion;
                     boids[i].NearbyFlockmates = boidData[i].nearbyFlockmates;
 
-                    boids[i].UpdateBoid();
+                    if (!boids[i].GetComponent<Chick>().pauseBoid)
+                    {
+                        boids[i].UpdateBoid();
+                    }
                 }
 
                 // Release the computer buffer

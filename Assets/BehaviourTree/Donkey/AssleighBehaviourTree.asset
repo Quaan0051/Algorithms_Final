@@ -1,0 +1,675 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-9033892089714794063
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0b024b6495757224aa3b5cdc0f6a40ab, type: 3}
+  m_Name: ConditionNode
+  m_EditorClassIdentifier: 
+  state: 0
+  isStarted: 0
+  blackboard: {fileID: 0}
+  guid: 1438656397decda45ab5d8f005c0f6a4
+  position: {x: -28.965921, y: 58.716072}
+  description: 
+  childTrue: {fileID: -4258888217861997208}
+  childFalse: {fileID: 672703206024079563}
+  conditionKey: canKick
+--- !u!114 &-7184166873826641554
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 309eb728f7c35264cb677a9b8ddc1769, type: 3}
+  m_Name: FocusCameraNode
+  m_EditorClassIdentifier: 
+  state: 0
+  isStarted: 0
+  blackboard: {fileID: 0}
+  guid: 21eb52d463edfaa428e895527f5415e9
+  position: {x: -1006.7188, y: 386.32004}
+  description: 
+  duration: 2
+--- !u!114 &-6822188319192238684
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1ff6bae773798134ea68be5be9a3b8c2, type: 3}
+  m_Name: PlayAnimationNode
+  m_EditorClassIdentifier: 
+  state: 0
+  isStarted: 0
+  blackboard: {fileID: 0}
+  guid: 6cbd09e77c336f34181520abe9635a17
+  position: {x: 106.164444, y: 595.6261}
+  description: 
+  animationKey: Donkey-Eating
+--- !u!114 &-6243950314903146142
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1ff6bae773798134ea68be5be9a3b8c2, type: 3}
+  m_Name: PlayAnimationNode
+  m_EditorClassIdentifier: 
+  state: 0
+  isStarted: 0
+  blackboard: {fileID: 0}
+  guid: 274f62384b8b46b4695d55ee5fc38862
+  position: {x: -832.7189, y: 387.32004}
+  description: 
+  animationKey: Donkey-AttackKick
+--- !u!114 &-6155809951712784407
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 70ee36f45fb068346bc8e9dca5a90b4a, type: 3}
+  m_Name: DelayNode
+  m_EditorClassIdentifier: 
+  state: 0
+  isStarted: 0
+  blackboard: {fileID: 0}
+  guid: 1fd48c62d95f3ce46a7a391efc9fcb9b
+  position: {x: -657.7189, y: 388.32007}
+  description: 
+  duration: 1
+--- !u!114 &-5312522646045685730
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ddd7b32a3a129bd4785fd4d155d35748, type: 3}
+  m_Name: RandomSelectorNode
+  m_EditorClassIdentifier: 
+  state: 0
+  isStarted: 0
+  blackboard: {fileID: 0}
+  guid: 619757d4549706742a6a1ef2165ab0c9
+  position: {x: -75, y: 596}
+  description: 
+  children:
+  - {fileID: 7494759303720670966}
+  - {fileID: -3477272913491575280}
+  - {fileID: -44931344257423646}
+--- !u!114 &-4258888217861997208
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3996b50878de65743a31015986ad0e36, type: 3}
+  m_Name: SequencerNode
+  m_EditorClassIdentifier: 
+  state: 0
+  isStarted: 0
+  blackboard: {fileID: 0}
+  guid: 89b9ce35ddb9a754b830e7331e095063
+  position: {x: -656.71893, y: 246.32004}
+  description: 
+  children:
+  - {fileID: -7184166873826641554}
+  - {fileID: -6243950314903146142}
+  - {fileID: -6155809951712784407}
+  - {fileID: 6391587770825844476}
+  - {fileID: -4087119641171120436}
+--- !u!114 &-4087119641171120436
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1ff6bae773798134ea68be5be9a3b8c2, type: 3}
+  m_Name: PlayAnimationNode
+  m_EditorClassIdentifier: 
+  state: 0
+  isStarted: 0
+  blackboard: {fileID: 0}
+  guid: 0b09fdd9909a28d4683df9784233df84
+  position: {x: -263.7188, y: 391.32007}
+  description: 
+  animationKey: Donkey-Walk
+--- !u!114 &-4011568294558461334
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 35760d0d3923c8b4ea02b653ee9e51ae, type: 3}
+  m_Name: RangedDelayNode
+  m_EditorClassIdentifier: 
+  state: 0
+  isStarted: 0
+  blackboard: {fileID: 0}
+  guid: 5bcccd63b61747645ab73aff21166f52
+  position: {x: 1538.7299, y: 590.0001}
+  description: 
+  minDuration: 2
+  maxDuration: 5
+--- !u!114 &-3688194631397565316
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1ff6bae773798134ea68be5be9a3b8c2, type: 3}
+  m_Name: PlayAnimationNode
+  m_EditorClassIdentifier: 
+  state: 0
+  isStarted: 0
+  blackboard: {fileID: 0}
+  guid: 80631c84fe13b98419b4144f0004f4c2
+  position: {x: 813.72986, y: 588.0001}
+  description: 
+  animationKey: Donkey-Walk
+--- !u!114 &-3477272913491575280
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3996b50878de65743a31015986ad0e36, type: 3}
+  m_Name: SequencerNode
+  m_EditorClassIdentifier: 
+  state: 0
+  isStarted: 0
+  blackboard: {fileID: 0}
+  guid: 3e2807d6901bd6b4bb90961bb2bc8a23
+  position: {x: -74.83555, y: 776.62616}
+  description: 
+  children:
+  - {fileID: 4799434793235754644}
+  - {fileID: 7599705959502970022}
+--- !u!114 &-2573563508675816217
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 33b2385e8016d244dab298a94d10a405, type: 3}
+  m_Name: RandomizeDestinationNode
+  m_EditorClassIdentifier: 
+  state: 0
+  isStarted: 0
+  blackboard: {fileID: 0}
+  guid: 3ad9ef19d13387a4ca5381c1403299f0
+  position: {x: 980.7299, y: 589}
+  description: 
+  destinationKey: RandomDestination
+  walkRadius: 75
+--- !u!114 &-2108755708726372688
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86d4230305a727c4c87c8699f9d234de, type: 3}
+  m_Name: RotationNode
+  m_EditorClassIdentifier: 
+  state: 0
+  isStarted: 0
+  blackboard: {fileID: 0}
+  guid: 93211ce7e2116a346819b911dbceb75a
+  position: {x: 182.16454, y: 930.62616}
+  description: 
+  lookPosition: {x: 0, y: 0, z: 0}
+--- !u!114 &-44931344257423646
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d900ed54b46d62941b8da6fc1f6a69ca, type: 3}
+  m_Name: SelectorNode
+  m_EditorClassIdentifier: 
+  state: 0
+  isStarted: 0
+  blackboard: {fileID: 0}
+  guid: fc21d46af122a4b45a0428bad344f020
+  position: {x: 265.16452, y: 779.62616}
+  description: 
+  children:
+  - {fileID: -2108755708726372688}
+  - {fileID: 5429349724448511515}
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bda80f8de0d36a5488aa68e3075c989d, type: 3}
+  m_Name: AssleighBehaviourTree
+  m_EditorClassIdentifier: 
+  blackboard: {fileID: 11400000, guid: 185d1277a6ccdfd4296709473f0a4434, type: 2}
+  rootNode: {fileID: 1541266844657169789}
+  treeState: 0
+  nodes:
+  - {fileID: 1541266844657169789}
+  - {fileID: 6248581591856786939}
+  - {fileID: 516492241107945974}
+  - {fileID: 8597437740596926880}
+  - {fileID: 672703206024079563}
+  - {fileID: 9172069776659624721}
+  - {fileID: -3688194631397565316}
+  - {fileID: -2573563508675816217}
+  - {fileID: 7267050957193436044}
+  - {fileID: -4011568294558461334}
+  - {fileID: 3500146035911677646}
+  - {fileID: -5312522646045685730}
+  - {fileID: 7599705959502970022}
+  - {fileID: 5429349724448511515}
+  - {fileID: 8038427087039606734}
+  - {fileID: -6822188319192238684}
+  - {fileID: 2859393423148974881}
+  - {fileID: 7817539778901503320}
+  - {fileID: 5193486148556995793}
+  - {fileID: 4799434793235754644}
+  - {fileID: -2108755708726372688}
+  - {fileID: -3477272913491575280}
+  - {fileID: 7494759303720670966}
+  - {fileID: -44931344257423646}
+  - {fileID: -9033892089714794063}
+  - {fileID: -6243950314903146142}
+  - {fileID: 6391587770825844476}
+  - {fileID: -4258888217861997208}
+  - {fileID: -7184166873826641554}
+  - {fileID: -6155809951712784407}
+  - {fileID: -4087119641171120436}
+--- !u!114 &516492241107945974
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1ff6bae773798134ea68be5be9a3b8c2, type: 3}
+  m_Name: PlayAnimationNode
+  m_EditorClassIdentifier: 
+  state: 0
+  isStarted: 0
+  blackboard: {fileID: 0}
+  guid: b7fac47c6283eff419c5c062384f8dab
+  position: {x: 1352.7299, y: 592.0001}
+  description: 
+  animationKey: Donkey-Idle
+--- !u!114 &672703206024079563
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0b024b6495757224aa3b5cdc0f6a40ab, type: 3}
+  m_Name: ConditionNode
+  m_EditorClassIdentifier: 
+  state: 0
+  isStarted: 0
+  blackboard: {fileID: 0}
+  guid: 5d133d73b849cca48b6dbb33c86452f6
+  position: {x: 599.99994, y: 246.61714}
+  description: 
+  childTrue: {fileID: 9172069776659624721}
+  childFalse: {fileID: 6248581591856786939}
+  conditionKey: isHungry
+--- !u!114 &1541266844657169789
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 99ab9cc45955e6b4a925fbb7f62d3bbe, type: 3}
+  m_Name: RootNode
+  m_EditorClassIdentifier: 
+  state: 0
+  isStarted: 0
+  blackboard: {fileID: 0}
+  guid: 8762f3327e99ed249bb43a3753641861
+  position: {x: -0.98857576, y: -250.54507}
+  description: 
+  child: {fileID: 8597437740596926880}
+--- !u!114 &2859393423148974881
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 70ee36f45fb068346bc8e9dca5a90b4a, type: 3}
+  m_Name: DelayNode
+  m_EditorClassIdentifier: 
+  state: 0
+  isStarted: 0
+  blackboard: {fileID: 0}
+  guid: 61ea5aa4eb033ae408c475e369e7f664
+  position: {x: 280.16455, y: 597.6261}
+  description: 
+  duration: 10
+--- !u!114 &3500146035911677646
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1ff6bae773798134ea68be5be9a3b8c2, type: 3}
+  m_Name: PlayAnimationNode
+  m_EditorClassIdentifier: 
+  state: 0
+  isStarted: 0
+  blackboard: {fileID: 0}
+  guid: b4f95144c6800604aa7c1b63a0f686c0
+  position: {x: -251.83554, y: 592.62616}
+  description: 
+  animationKey: Donkey-Walk
+--- !u!114 &4799434793235754644
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86d4230305a727c4c87c8699f9d234de, type: 3}
+  m_Name: RotationNode
+  m_EditorClassIdentifier: 
+  state: 0
+  isStarted: 0
+  blackboard: {fileID: 0}
+  guid: 0f9c164633739854bbd9ee532f19d3ae
+  position: {x: -157.83553, y: 930.62616}
+  description: 
+  lookPosition: {x: 0, y: 0, z: 0}
+--- !u!114 &5193486148556995793
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86d4230305a727c4c87c8699f9d234de, type: 3}
+  m_Name: RotationNode
+  m_EditorClassIdentifier: 
+  state: 0
+  isStarted: 0
+  blackboard: {fileID: 0}
+  guid: d79c26b8519dfcf408b707e536a67af1
+  position: {x: -511.83557, y: 929.62616}
+  description: 
+  lookPosition: {x: 0, y: 0, z: 0}
+--- !u!114 &5429349724448511515
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a393320974134342a9d5f3c1f7849a0, type: 3}
+  m_Name: MoveToNode
+  m_EditorClassIdentifier: 
+  state: 0
+  isStarted: 0
+  blackboard: {fileID: 0}
+  guid: 671489a044a94054da88e67e7ad8cba3
+  position: {x: 344.1645, y: 930.62616}
+  description: 
+  destinationKey: HayShed
+  tolerance: 1
+--- !u!114 &6248581591856786939
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3996b50878de65743a31015986ad0e36, type: 3}
+  m_Name: SequencerNode
+  m_EditorClassIdentifier: 
+  state: 0
+  isStarted: 0
+  blackboard: {fileID: 0}
+  guid: 95fc6e3d23ed63e419fff16f6d5d4ae0
+  position: {x: 1171.7297, y: 432}
+  description: 
+  children:
+  - {fileID: -3688194631397565316}
+  - {fileID: -2573563508675816217}
+  - {fileID: 7267050957193436044}
+  - {fileID: 516492241107945974}
+  - {fileID: -4011568294558461334}
+--- !u!114 &6391587770825844476
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: de3453e0d0391184c815d35447699279, type: 3}
+  m_Name: ModifyBlackboardValueBool
+  m_EditorClassIdentifier: 
+  state: 0
+  isStarted: 0
+  blackboard: {fileID: 0}
+  guid: a69b0321e9850a34d943c7b56536bb3d
+  position: {x: -489.7189, y: 389.32}
+  description: 
+  entryKey: canKick
+  newValue: 0
+--- !u!114 &7267050957193436044
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a393320974134342a9d5f3c1f7849a0, type: 3}
+  m_Name: MoveToNode
+  m_EditorClassIdentifier: 
+  state: 0
+  isStarted: 0
+  blackboard: {fileID: 0}
+  guid: 528a64c9b58837547aad472b12da43a0
+  position: {x: 1172.7299, y: 589}
+  description: 
+  destinationKey: RandomDestination
+  tolerance: 1
+--- !u!114 &7494759303720670966
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d900ed54b46d62941b8da6fc1f6a69ca, type: 3}
+  m_Name: SelectorNode
+  m_EditorClassIdentifier: 
+  state: 0
+  isStarted: 0
+  blackboard: {fileID: 0}
+  guid: c075216379e276540aa04c2ee4b8406b
+  position: {x: -428.83554, y: 776.62616}
+  description: 
+  children:
+  - {fileID: 5193486148556995793}
+  - {fileID: 8038427087039606734}
+--- !u!114 &7599705959502970022
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a393320974134342a9d5f3c1f7849a0, type: 3}
+  m_Name: MoveToNode
+  m_EditorClassIdentifier: 
+  state: 0
+  isStarted: 0
+  blackboard: {fileID: 0}
+  guid: cfbc57341388fc84a877c41da12b4ba6
+  position: {x: 3.1644735, y: 930.62616}
+  description: 
+  destinationKey: Trough
+  tolerance: 1
+--- !u!114 &7817539778901503320
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: de3453e0d0391184c815d35447699279, type: 3}
+  m_Name: ModifyBlackboardValueBool
+  m_EditorClassIdentifier: 
+  state: 0
+  isStarted: 0
+  blackboard: {fileID: 0}
+  guid: f43e45e193c7a9e4da46c73a52e09a3a
+  position: {x: 444.16443, y: 595.6261}
+  description: 
+  entryKey: isHungry
+  newValue: 0
+--- !u!114 &8038427087039606734
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a393320974134342a9d5f3c1f7849a0, type: 3}
+  m_Name: MoveToNode
+  m_EditorClassIdentifier: 
+  state: 0
+  isStarted: 0
+  blackboard: {fileID: 0}
+  guid: 884db743bebfadd4b8138cb4863ecb25
+  position: {x: -345.83554, y: 931.62616}
+  description: 
+  destinationKey: Hay
+  tolerance: 1
+--- !u!114 &8597437740596926880
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 35fc7a87a996db4458d5b764e7044887, type: 3}
+  m_Name: RepeaterNode
+  m_EditorClassIdentifier: 
+  state: 0
+  isStarted: 0
+  blackboard: {fileID: 0}
+  guid: c8626f204c33150439e68e3c055770c0
+  position: {x: -0.98857576, y: -125.54508}
+  description: 
+  child: {fileID: -9033892089714794063}
+  repeatCount: -1
+--- !u!114 &9172069776659624721
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3996b50878de65743a31015986ad0e36, type: 3}
+  m_Name: SequencerNode
+  m_EditorClassIdentifier: 
+  state: 0
+  isStarted: 0
+  blackboard: {fileID: 0}
+  guid: b34a3b8197d3ee34ca5507a94094ea85
+  position: {x: 106.164444, y: 433.62616}
+  description: 
+  children:
+  - {fileID: 3500146035911677646}
+  - {fileID: -5312522646045685730}
+  - {fileID: -6822188319192238684}
+  - {fileID: 2859393423148974881}
+  - {fileID: 7817539778901503320}

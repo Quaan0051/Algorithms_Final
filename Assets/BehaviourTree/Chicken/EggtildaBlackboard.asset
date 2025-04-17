@@ -10,29 +10,19 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 8a360a5c805cc1c43b569218a4430240, type: 3}
-  m_Name: BullBlackboard
+  m_Name: EggtildaBlackboard
   m_EditorClassIdentifier: 
   intData:
     entries: []
   floatData:
-    entries: []
+    entries:
+    - key: Speed
+      value: 8
   boolData:
     entries:
-    - key: isHungry
-      value: 1
-    - key: Rage
+    - key: CanPeck
       value: 0
   vector3Data:
-    entries:
-    - key: RandomDestination
-      value: {x: 281.51617, y: 0.02088356, z: 370.2467}
-    - key: Hay
-      value: {x: 238, y: 0, z: 390}
-    - key: Trough
-      value: {x: 280, y: 0, z: 382}
-    - key: HayShed
-      value: {x: 162, y: 0, z: 338}
-    - key: Target
-      value: {x: 205.54376, y: 0.18345642, z: 260.20312}
+    entries: []
   stringData:
     entries: []

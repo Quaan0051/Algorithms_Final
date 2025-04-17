@@ -1,0 +1,697 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-8992632377275044873
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1ff6bae773798134ea68be5be9a3b8c2, type: 3}
+  m_Name: PlayAnimationNode
+  m_EditorClassIdentifier: 
+  state: 0
+  isStarted: 0
+  blackboard: {fileID: 0}
+  guid: aedb672d7c0072e43866c9cf2e3100cb
+  position: {x: -484.55374, y: 596.00397}
+  description: 
+  animationKey: Bull-Idle2
+--- !u!114 &-8767194820904424530
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1ff6bae773798134ea68be5be9a3b8c2, type: 3}
+  m_Name: PlayAnimationNode
+  m_EditorClassIdentifier: 
+  state: 0
+  isStarted: 0
+  blackboard: {fileID: 0}
+  guid: 14f4dc8243b22114c96f8eb46bfd5252
+  position: {x: 1435, y: 794}
+  description: 
+  animationKey: Bull-Idle
+--- !u!114 &-8702529515770937831
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3996b50878de65743a31015986ad0e36, type: 3}
+  m_Name: SequencerNode
+  m_EditorClassIdentifier: 
+  state: 0
+  isStarted: 0
+  blackboard: {fileID: 0}
+  guid: 10d2791b6f336624f98483dd6ae188b2
+  position: {x: -578.9574, y: 424.68698}
+  description: 
+  children:
+  - {fileID: -3927156856720693657}
+  - {fileID: -6147687694404682694}
+  - {fileID: -5575653282786966241}
+  - {fileID: -8992632377275044873}
+  - {fileID: 5712033801468535725}
+  - {fileID: -3094915077700411948}
+--- !u!114 &-8495219670071867959
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86d4230305a727c4c87c8699f9d234de, type: 3}
+  m_Name: RotationNode
+  m_EditorClassIdentifier: 
+  state: 0
+  isStarted: 0
+  blackboard: {fileID: 0}
+  guid: 2b6b1dd685419414ab58018def9b8788
+  position: {x: 119.99996, y: 1118}
+  description: 
+  lookPosition: {x: 231.27, y: 0, z: 318.28}
+--- !u!114 &-7725776813640078113
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3996b50878de65743a31015986ad0e36, type: 3}
+  m_Name: SequencerNode
+  m_EditorClassIdentifier: 
+  state: 0
+  isStarted: 0
+  blackboard: {fileID: 0}
+  guid: 9b48488728c42aa4d95de70492a244ca
+  position: {x: -302, y: 963.4861}
+  description: 
+  children:
+  - {fileID: 2972880417796190677}
+  - {fileID: -3530249544352695018}
+--- !u!114 &-7211306695353804111
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3996b50878de65743a31015986ad0e36, type: 3}
+  m_Name: SequencerNode
+  m_EditorClassIdentifier: 
+  state: 0
+  isStarted: 0
+  blackboard: {fileID: 0}
+  guid: c00a9e8311c96084597f5057bc321017
+  position: {x: 223.24333, y: 596.3131}
+  description: 
+  children:
+  - {fileID: 2432169104821874929}
+  - {fileID: -2060111448943752150}
+  - {fileID: -1443736578413756308}
+  - {fileID: 1019203978231344495}
+  - {fileID: 6397936996784926390}
+--- !u!114 &-6405543768349174490
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 99ab9cc45955e6b4a925fbb7f62d3bbe, type: 3}
+  m_Name: RootNode
+  m_EditorClassIdentifier: 
+  state: 0
+  isStarted: 0
+  blackboard: {fileID: 0}
+  guid: d8ea566eb87c56547a628a5494068c57
+  position: {x: 4, y: -32}
+  description: 
+  child: {fileID: 2643095908448740893}
+--- !u!114 &-6362084888067867778
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3996b50878de65743a31015986ad0e36, type: 3}
+  m_Name: SequencerNode
+  m_EditorClassIdentifier: 
+  state: 0
+  isStarted: 0
+  blackboard: {fileID: 0}
+  guid: eb5f44a4e54adf248ad7d3ed00bef7ac
+  position: {x: 406.99994, y: 956.251}
+  description: 
+  children:
+  - {fileID: -5652408087655025514}
+  - {fileID: 994570369110302134}
+--- !u!114 &-6147687694404682694
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1ff6bae773798134ea68be5be9a3b8c2, type: 3}
+  m_Name: PlayAnimationNode
+  m_EditorClassIdentifier: 
+  state: 0
+  isStarted: 0
+  blackboard: {fileID: 0}
+  guid: 8fa9ab7436d38b44bb66bcc675d810ed
+  position: {x: -827.55365, y: 599.00397}
+  description: 
+  animationKey: Bull-Gallop
+--- !u!114 &-5652408087655025514
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a393320974134342a9d5f3c1f7849a0, type: 3}
+  m_Name: MoveToNode
+  m_EditorClassIdentifier: 
+  state: 0
+  isStarted: 0
+  blackboard: {fileID: 0}
+  guid: 255d268bdc3e1164d994b340573d3084
+  position: {x: 323.5932, y: 1115.9999}
+  description: 
+  destinationKey: HayShed
+  tolerance: 1
+--- !u!114 &-5575653282786966241
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a393320974134342a9d5f3c1f7849a0, type: 3}
+  m_Name: MoveToNode
+  m_EditorClassIdentifier: 
+  state: 0
+  isStarted: 0
+  blackboard: {fileID: 0}
+  guid: bb8dd139cc562444ca5b3602e946c3fc
+  position: {x: -658.5537, y: 597.0039}
+  description: 
+  destinationKey: Target
+  tolerance: 1
+--- !u!114 &-4123136739328641107
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 33b2385e8016d244dab298a94d10a405, type: 3}
+  m_Name: RandomizeDestinationNode
+  m_EditorClassIdentifier: 
+  state: 0
+  isStarted: 0
+  blackboard: {fileID: 0}
+  guid: 17ec206debb2fbf45b0241a88886a6b9
+  position: {x: 1074.2827, y: 798.0079}
+  description: 
+  destinationKey: RandomDestination
+  walkRadius: 75
+--- !u!114 &-3927156856720693657
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 72bc747331e08d843b35c5506db88b30, type: 3}
+  m_Name: FocusTargetCameraNode
+  m_EditorClassIdentifier: 
+  state: 0
+  isStarted: 0
+  blackboard: {fileID: 0}
+  guid: ceb930a517d95914480af274f0e1462c
+  position: {x: -1012.55365, y: 599.00397}
+  description: 
+  duration: 3
+  target: Target
+--- !u!114 &-3530249544352695018
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86d4230305a727c4c87c8699f9d234de, type: 3}
+  m_Name: RotationNode
+  m_EditorClassIdentifier: 
+  state: 0
+  isStarted: 0
+  blackboard: {fileID: 0}
+  guid: cee2e0b7499f415409f6fe6fe6e89312
+  position: {x: -222.8484, y: 1117}
+  description: 
+  lookPosition: {x: 231.27, y: 0, z: 318.28}
+--- !u!114 &-3517377923914569350
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0b024b6495757224aa3b5cdc0f6a40ab, type: 3}
+  m_Name: ConditionNode
+  m_EditorClassIdentifier: 
+  state: 0
+  isStarted: 0
+  blackboard: {fileID: 0}
+  guid: 7f520b69a2145b44dbed5f8f3e896342
+  position: {x: 644.9642, y: 435.03976}
+  description: 
+  childTrue: {fileID: -7211306695353804111}
+  childFalse: {fileID: 7405047676042726256}
+  conditionKey: isHungry
+--- !u!114 &-3094915077700411948
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: de3453e0d0391184c815d35447699279, type: 3}
+  m_Name: ModifyBlackboardValueBool
+  m_EditorClassIdentifier: 
+  state: 0
+  isStarted: 0
+  blackboard: {fileID: 0}
+  guid: e4cfeabce08985447b043106eb492695
+  position: {x: -124, y: 596}
+  description: 
+  entryKey: Rage
+  newValue: 0
+--- !u!114 &-2060111448943752150
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ddd7b32a3a129bd4785fd4d155d35748, type: 3}
+  m_Name: RandomSelectorNode
+  m_EditorClassIdentifier: 
+  state: 0
+  isStarted: 0
+  blackboard: {fileID: 0}
+  guid: 748902d0855d4114ca9b53cb5f754d67
+  position: {x: 43.657043, y: 795.8125}
+  description: 
+  children:
+  - {fileID: -7725776813640078113}
+  - {fileID: 3671101850384752318}
+  - {fileID: -6362084888067867778}
+--- !u!114 &-1443736578413756308
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1ff6bae773798134ea68be5be9a3b8c2, type: 3}
+  m_Name: PlayAnimationNode
+  m_EditorClassIdentifier: 
+  state: 0
+  isStarted: 0
+  blackboard: {fileID: 0}
+  guid: 42fac5ef735f32449b99bfe52f24d518
+  position: {x: 223.9303, y: 794.68695}
+  description: 
+  animationKey: Bull-Eating
+--- !u!114 &-596410540413660218
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0b024b6495757224aa3b5cdc0f6a40ab, type: 3}
+  m_Name: ConditionNode
+  m_EditorClassIdentifier: 
+  state: 0
+  isStarted: 0
+  blackboard: {fileID: 0}
+  guid: 25894a74d2eb6a94a889990cba283cc8
+  position: {x: -21.95828, y: 244.833}
+  description: 
+  childTrue: {fileID: -8702529515770937831}
+  childFalse: {fileID: -3517377923914569350}
+  conditionKey: Rage
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bda80f8de0d36a5488aa68e3075c989d, type: 3}
+  m_Name: BullBehaviourTree
+  m_EditorClassIdentifier: 
+  blackboard: {fileID: 11400000, guid: e2cfe977792fa614a83e59537b3dab2b, type: 2}
+  rootNode: {fileID: -6405543768349174490}
+  treeState: 0
+  nodes:
+  - {fileID: -6405543768349174490}
+  - {fileID: 7405047676042726256}
+  - {fileID: 5796683818387440284}
+  - {fileID: 2643095908448740893}
+  - {fileID: -596410540413660218}
+  - {fileID: -3517377923914569350}
+  - {fileID: -7211306695353804111}
+  - {fileID: -6147687694404682694}
+  - {fileID: -5575653282786966241}
+  - {fileID: -8702529515770937831}
+  - {fileID: -8992632377275044873}
+  - {fileID: 5712033801468535725}
+  - {fileID: 2432169104821874929}
+  - {fileID: -3094915077700411948}
+  - {fileID: -2060111448943752150}
+  - {fileID: 2972880417796190677}
+  - {fileID: 5293742328939442962}
+  - {fileID: -5652408087655025514}
+  - {fileID: -1443736578413756308}
+  - {fileID: 1019203978231344495}
+  - {fileID: 6397936996784926390}
+  - {fileID: -4123136739328641107}
+  - {fileID: 5155488961107875440}
+  - {fileID: -8767194820904424530}
+  - {fileID: 2572697105267766521}
+  - {fileID: -3530249544352695018}
+  - {fileID: -8495219670071867959}
+  - {fileID: 994570369110302134}
+  - {fileID: -7725776813640078113}
+  - {fileID: 3671101850384752318}
+  - {fileID: -6362084888067867778}
+  - {fileID: -3927156856720693657}
+--- !u!114 &994570369110302134
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86d4230305a727c4c87c8699f9d234de, type: 3}
+  m_Name: RotationNode
+  m_EditorClassIdentifier: 
+  state: 0
+  isStarted: 0
+  blackboard: {fileID: 0}
+  guid: 1a00e02684ca849458909fdf6e8b38ba
+  position: {x: 492.25488, y: 1114.5853}
+  description: 
+  lookPosition: {x: 231.27, y: 0, z: 318.28}
+--- !u!114 &1019203978231344495
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 70ee36f45fb068346bc8e9dca5a90b4a, type: 3}
+  m_Name: DelayNode
+  m_EditorClassIdentifier: 
+  state: 0
+  isStarted: 0
+  blackboard: {fileID: 0}
+  guid: d8f1176c427f2504a816d626746e59a2
+  position: {x: 396.9303, y: 793.6871}
+  description: 
+  duration: 4
+--- !u!114 &2432169104821874929
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1ff6bae773798134ea68be5be9a3b8c2, type: 3}
+  m_Name: PlayAnimationNode
+  m_EditorClassIdentifier: 
+  state: 0
+  isStarted: 0
+  blackboard: {fileID: 0}
+  guid: a52a2eb56ad563142b4f113a19b8df33
+  position: {x: -139.06978, y: 792.68695}
+  description: 
+  animationKey: Bull-Walk
+--- !u!114 &2572697105267766521
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 70ee36f45fb068346bc8e9dca5a90b4a, type: 3}
+  m_Name: DelayNode
+  m_EditorClassIdentifier: 
+  state: 0
+  isStarted: 0
+  blackboard: {fileID: 0}
+  guid: 1846cf320a129274bb11a33c1d97f1a3
+  position: {x: 1618, y: 794}
+  description: 
+  duration: 5
+--- !u!114 &2643095908448740893
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 35fc7a87a996db4458d5b764e7044887, type: 3}
+  m_Name: RepeaterNode
+  m_EditorClassIdentifier: 
+  state: 0
+  isStarted: 0
+  blackboard: {fileID: 0}
+  guid: 04ed04d91aa99904cbf0c1de300cb8be
+  position: {x: 4.6449475, y: 93.29001}
+  description: 
+  child: {fileID: -596410540413660218}
+  repeatCount: -1
+--- !u!114 &2972880417796190677
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a393320974134342a9d5f3c1f7849a0, type: 3}
+  m_Name: MoveToNode
+  m_EditorClassIdentifier: 
+  state: 0
+  isStarted: 0
+  blackboard: {fileID: 0}
+  guid: 4eb56b4ed8ea36d46bfb33f0e3991c8f
+  position: {x: -389.55365, y: 1117.8007}
+  description: 
+  destinationKey: Hay
+  tolerance: 1
+--- !u!114 &3671101850384752318
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3996b50878de65743a31015986ad0e36, type: 3}
+  m_Name: SequencerNode
+  m_EditorClassIdentifier: 
+  state: 0
+  isStarted: 0
+  blackboard: {fileID: 0}
+  guid: b98dcf19189dda74b9f45aaa54029022
+  position: {x: 44.99997, y: 955.00397}
+  description: 
+  children:
+  - {fileID: 5293742328939442962}
+  - {fileID: -8495219670071867959}
+--- !u!114 &5155488961107875440
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a393320974134342a9d5f3c1f7849a0, type: 3}
+  m_Name: MoveToNode
+  m_EditorClassIdentifier: 
+  state: 0
+  isStarted: 0
+  blackboard: {fileID: 0}
+  guid: f1daab0ec8c3f284f990ec8b4dc7947d
+  position: {x: 1260.4875, y: 796.2276}
+  description: 
+  destinationKey: RandomDestination
+  tolerance: 1
+--- !u!114 &5293742328939442962
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a393320974134342a9d5f3c1f7849a0, type: 3}
+  m_Name: MoveToNode
+  m_EditorClassIdentifier: 
+  state: 0
+  isStarted: 0
+  blackboard: {fileID: 0}
+  guid: b5442ac1b991df247b6dd2826dfe52ff
+  position: {x: -37.741024, y: 1118}
+  description: 
+  destinationKey: Trough
+  tolerance: 1
+--- !u!114 &5712033801468535725
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 70ee36f45fb068346bc8e9dca5a90b4a, type: 3}
+  m_Name: DelayNode
+  m_EditorClassIdentifier: 
+  state: 0
+  isStarted: 0
+  blackboard: {fileID: 0}
+  guid: abba76cce7d2c4645963cf3a76fdaa1e
+  position: {x: -303.5536, y: 595.00397}
+  description: 
+  duration: 3
+--- !u!114 &5796683818387440284
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1ff6bae773798134ea68be5be9a3b8c2, type: 3}
+  m_Name: PlayAnimationNode
+  m_EditorClassIdentifier: 
+  state: 0
+  isStarted: 0
+  blackboard: {fileID: 0}
+  guid: 0012b70ac02afbb42ab28255a515d610
+  position: {x: 905.28265, y: 796.00793}
+  description: 
+  animationKey: Bull-Walk
+--- !u!114 &6397936996784926390
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: de3453e0d0391184c815d35447699279, type: 3}
+  m_Name: ModifyBlackboardValueBool
+  m_EditorClassIdentifier: 
+  state: 0
+  isStarted: 0
+  blackboard: {fileID: 0}
+  guid: d95e281964e44394a963ee85ae2c3383
+  position: {x: 572.9305, y: 793.6871}
+  description: 
+  entryKey: isHungry
+  newValue: 0
+--- !u!114 &7405047676042726256
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3996b50878de65743a31015986ad0e36, type: 3}
+  m_Name: SequencerNode
+  m_EditorClassIdentifier: 
+  state: 0
+  isStarted: 0
+  blackboard: {fileID: 0}
+  guid: 6f709dd26754fcf4993ab6d3fc3b57ff
+  position: {x: 1260.64, y: 596.0325}
+  description: 
+  children:
+  - {fileID: 5796683818387440284}
+  - {fileID: -4123136739328641107}
+  - {fileID: 5155488961107875440}
+  - {fileID: -8767194820904424530}
+  - {fileID: 2572697105267766521}

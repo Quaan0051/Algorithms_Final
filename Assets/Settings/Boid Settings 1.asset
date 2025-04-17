@@ -13,11 +13,11 @@ MonoBehaviour:
   m_Name: Boid Settings 1
   m_EditorClassIdentifier: 
   minSpeed: 8
-  maxSpeed: 20
+  maxSpeed: 13
   viewRadius: 4
   avoidRadius: 1.5
   maxSteerForce: 20
-  seperationWeight: 3
+  seperationWeight: 2
   alignmentWeight: 1
   cohesionWeight: 1
   targetWeight: 1

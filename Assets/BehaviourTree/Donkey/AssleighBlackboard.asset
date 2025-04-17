@@ -10,15 +10,27 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 8a360a5c805cc1c43b569218a4430240, type: 3}
-  m_Name: FoxBlackboard
+  m_Name: AssleighBlackboard
   m_EditorClassIdentifier: 
   intData:
     entries: []
   floatData:
     entries: []
   boolData:
-    entries: []
+    entries:
+    - key: isHungry
+      value: 0
+    - key: canKick
+      value: 0
   vector3Data:
-    entries: []
+    entries:
+    - key: RandomDestination
+      value: {x: 239.28912, y: 0.0490724, z: 353.16705}
+    - key: Hay
+      value: {x: 228, y: 0, z: 395}
+    - key: Trough
+      value: {x: 268, y: 0, z: 398}
+    - key: HayShed
+      value: {x: 161, y: 0, z: 314}
   stringData:
     entries: []

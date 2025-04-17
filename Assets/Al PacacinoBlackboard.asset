@@ -10,19 +10,27 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 8a360a5c805cc1c43b569218a4430240, type: 3}
-  m_Name: ChickenBlackboard 1
+  m_Name: Al PacacinoBlackboard
   m_EditorClassIdentifier: 
   intData:
     entries: []
   floatData:
-    entries:
-    - key: Speed
-      value: 8
+    entries: []
   boolData:
     entries:
-    - key: CanPeck
+    - key: isHungry
       value: 1
+    - key: canHawkTuah
+      value: 0
   vector3Data:
-    entries: []
+    entries:
+    - key: RandomDestination
+      value: {x: 255.54219, y: 0.02088356, z: 298.7848}
+    - key: Hay
+      value: {x: 252.79, y: 0, z: 398.09}
+    - key: Trough
+      value: {x: 283.08, y: 0, z: 387.54}
+    - key: HayShed
+      value: {x: 160.99, y: 0, z: 337.7}
   stringData:
     entries: []

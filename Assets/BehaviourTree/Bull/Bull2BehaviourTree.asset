@@ -81,7 +81,7 @@ MonoBehaviour:
   guid: 2b6b1dd685419414ab58018def9b8788
   position: {x: 133.46623, y: 1118.0994}
   description: 
-  rotation: 45
+  lookPosition: {x: 231.27, y: 0, z: 318.28}
 --- !u!114 &-7725776813640078113
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -284,7 +284,7 @@ MonoBehaviour:
   guid: cee2e0b7499f415409f6fe6fe6e89312
   position: {x: -222.8484, y: 1117}
   description: 
-  rotation: 0
+  lookPosition: {x: 231.27, y: 0, z: 318.28}
 --- !u!114 &-3517377923914569350
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -398,7 +398,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: bda80f8de0d36a5488aa68e3075c989d, type: 3}
-  m_Name: BullBehaviourTree
+  m_Name: Bull2BehaviourTree
   m_EditorClassIdentifier: 
   blackboard: {fileID: 11400000, guid: e2cfe977792fa614a83e59537b3dab2b, type: 2}
   rootNode: {fileID: -6405543768349174490}
@@ -454,7 +454,7 @@ MonoBehaviour:
   guid: 1a00e02684ca849458909fdf6e8b38ba
   position: {x: 492.25488, y: 1114.5853}
   description: 
-  rotation: 270
+  lookPosition: {x: 231.27, y: 0, z: 318.28}
 --- !u!114 &1019203978231344495
 MonoBehaviour:
   m_ObjectHideFlags: 0

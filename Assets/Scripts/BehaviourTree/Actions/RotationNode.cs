@@ -4,13 +4,16 @@ using UnityEngine;
 
 public class RotationNode : ActionNode
 {
-    public float rotation;
-    private float current;
+    public Vector3 lookPosition;
     private float lerpPercent = 0.0f;
+    private Quaternion originalRotation;
+    private Quaternion newRotation;
 
     protected override void OnStart()
     {
-        
+        originalRotation = context.transform.rotation;
+        context.transform.LookAt(lookPosition);
+        newRotation = context.transform.rotation;
     }
 
     protected override void OnStop()
@@ -20,11 +23,9 @@ public class RotationNode : ActionNode
 
     protected override State OnUpdate()
     {
-        current = Mathf.Lerp(current, rotation, lerpPercent);
+        context.transform.rotation = Quaternion.Slerp(originalRotation, newRotation, lerpPercent);
 
         lerpPercent += Time.deltaTime;
-
-        context.transform.rotation.Set(context.transform.rotation.x,current,context.transform.rotation.z, context.transform.rotation.w);
 
         if (lerpPercent >= 1)
         {

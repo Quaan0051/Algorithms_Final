@@ -16,7 +16,7 @@ MonoBehaviour:
   isStarted: 0
   blackboard: {fileID: 0}
   guid: f42e8bfad6d94a64b92a9a24dd843094
-  position: {x: -105, y: 135}
+  position: {x: -101, y: 154}
   description: 
   animationKey: Chicken-IdlePeck
 --- !u!114 &-586685742740916569
@@ -32,7 +32,7 @@ MonoBehaviour:
   m_Name: RootNode
   m_EditorClassIdentifier: 
   state: 0
-  isStarted: 0
+  isStarted: 1
   blackboard: {fileID: 0}
   guid: e724fe5fb239334498a52503830ccbe0
   position: {x: 1.0140038, y: -213.87357}
@@ -48,9 +48,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: bda80f8de0d36a5488aa68e3075c989d, type: 3}
-  m_Name: ChickenBehaviourTree 2
+  m_Name: HeniferBehaviourTree
   m_EditorClassIdentifier: 
-  blackboard: {fileID: 11400000, guid: faa3c7021a1dc654fbd31890ff3a35e4, type: 2}
+  blackboard: {fileID: 11400000, guid: cdb9415166bc37c4a9cd980a7828e565, type: 2}
   rootNode: {fileID: -586685742740916569}
   treeState: 0
   nodes:
@@ -72,7 +72,7 @@ MonoBehaviour:
   m_Name: RepeaterNode
   m_EditorClassIdentifier: 
   state: 0
-  isStarted: 0
+  isStarted: 1
   blackboard: {fileID: 0}
   guid: 35884477f05009f448b56dbfe3697d1f
   position: {x: 0.98624855, y: -121.94433}
@@ -95,7 +95,7 @@ MonoBehaviour:
   isStarted: 0
   blackboard: {fileID: 0}
   guid: 548ce0a27e38b124385844d8f8260bc8
-  position: {x: 91, y: 135}
+  position: {x: 105, y: 154}
   description: 
   animationKey: Chicken-Run
 --- !u!114 &8895550491590147196
@@ -114,7 +114,7 @@ MonoBehaviour:
   isStarted: 0
   blackboard: {fileID: 0}
   guid: fecdb0f6b85e4394dae1df25c20d2802
-  position: {x: -28, y: -12}
+  position: {x: -28, y: -10}
   description: 
   childTrue: {fileID: -2338694728718948583}
   childFalse: {fileID: 7919350921020202444}
