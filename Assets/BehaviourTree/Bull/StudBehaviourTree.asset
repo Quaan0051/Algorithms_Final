@@ -79,9 +79,9 @@ MonoBehaviour:
   isStarted: 0
   blackboard: {fileID: 0}
   guid: 2b6b1dd685419414ab58018def9b8788
-  position: {x: 119.99996, y: 1118}
+  position: {x: 134.96507, y: 1120.1948}
   description: 
-  lookPosition: {x: 231.27, y: 0, z: 318.28}
+  lookPosition: {x: 300, y: 0, z: 400}
 --- !u!114 &-7725776813640078113
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -205,7 +205,7 @@ MonoBehaviour:
   position: {x: 323.5932, y: 1115.9999}
   description: 
   destinationKey: HayShed
-  tolerance: 1
+  tolerance: 2
 --- !u!114 &-5575653282786966241
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -225,7 +225,7 @@ MonoBehaviour:
   position: {x: -658.5537, y: 597.0039}
   description: 
   destinationKey: Target
-  tolerance: 1
+  tolerance: 1.5
 --- !u!114 &-4123136739328641107
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -284,7 +284,7 @@ MonoBehaviour:
   guid: cee2e0b7499f415409f6fe6fe6e89312
   position: {x: -222.8484, y: 1117}
   description: 
-  lookPosition: {x: 231.27, y: 0, z: 318.28}
+  lookPosition: {x: 240, y: 0, z: 425}
 --- !u!114 &-3517377923914569350
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -398,7 +398,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: bda80f8de0d36a5488aa68e3075c989d, type: 3}
-  m_Name: BullBehaviourTree
+  m_Name: StudBehaviourTree
   m_EditorClassIdentifier: 
   blackboard: {fileID: 11400000, guid: e2cfe977792fa614a83e59537b3dab2b, type: 2}
   rootNode: {fileID: -6405543768349174490}
@@ -454,7 +454,7 @@ MonoBehaviour:
   guid: 1a00e02684ca849458909fdf6e8b38ba
   position: {x: 492.25488, y: 1114.5853}
   description: 
-  lookPosition: {x: 231.27, y: 0, z: 318.28}
+  lookPosition: {x: 125, y: 0, z: 340}
 --- !u!114 &1019203978231344495
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -551,7 +551,7 @@ MonoBehaviour:
   position: {x: -389.55365, y: 1117.8007}
   description: 
   destinationKey: Hay
-  tolerance: 1
+  tolerance: 2
 --- !u!114 &3671101850384752318
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -592,7 +592,7 @@ MonoBehaviour:
   position: {x: 1260.4875, y: 796.2276}
   description: 
   destinationKey: RandomDestination
-  tolerance: 1
+  tolerance: 2
 --- !u!114 &5293742328939442962
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -612,7 +612,7 @@ MonoBehaviour:
   position: {x: -37.741024, y: 1118}
   description: 
   destinationKey: Trough
-  tolerance: 1
+  tolerance: 2
 --- !u!114 &5712033801468535725
 MonoBehaviour:
   m_ObjectHideFlags: 0

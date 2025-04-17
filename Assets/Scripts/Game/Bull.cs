@@ -28,7 +28,7 @@ public class Bull : Animal
         if (RageTimer >= 0.0f && blackboard.GetValue<bool>("Rage") == false)
         {
             RageTimer -= Time.deltaTime;
-            agent.speed = 8.0f;
+            agent.speed = 3.5f;
             agent.acceleration = 4.0f;
             agent.angularSpeed = 150.0f;
             agent.stoppingDistance = 6.0f;

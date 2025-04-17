@@ -21,13 +21,13 @@ MonoBehaviour:
     - key: isHungry
       value: 0
     - key: canKick
-      value: 1
+      value: 0
   vector3Data:
     entries:
     - key: RandomDestination
-      value: {x: 189.7816, y: 0.02088356, z: 347.1341}
+      value: {x: 262.3108, y: 0.06130426, z: 319.5433}
     - key: Hay
-      value: {x: 228, y: 0, z: 395}
+      value: {x: 240, y: 0, z: 395}
     - key: Trough
       value: {x: 268, y: 0, z: 398}
     - key: HayShed

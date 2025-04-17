@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 8a360a5c805cc1c43b569218a4430240, type: 3}
-  m_Name: BullBlackboard
+  m_Name: GiancarloBlackboard
   m_EditorClassIdentifier: 
   intData:
     entries: []
@@ -20,19 +20,17 @@ MonoBehaviour:
     entries:
     - key: isHungry
       value: 0
-    - key: Rage
+    - key: canHawkTuah
       value: 0
   vector3Data:
     entries:
     - key: RandomDestination
-      value: {x: 238.76256, y: 0.02088356, z: 328.39926}
+      value: {x: 186.57042, y: 0.02088356, z: 379.95978}
     - key: Hay
-      value: {x: 238, y: 0, z: 390}
+      value: {x: 252.79, y: 0, z: 398.09}
     - key: Trough
-      value: {x: 280, y: 0, z: 382}
+      value: {x: 283.08, y: 0, z: 387.54}
     - key: HayShed
-      value: {x: 162, y: 0, z: 338}
-    - key: Target
-      value: {x: 258.58524, y: 0.18345642, z: 361.66177}
+      value: {x: 160.99, y: 0, z: 337.7}
   stringData:
     entries: []

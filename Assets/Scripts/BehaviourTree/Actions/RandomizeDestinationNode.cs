@@ -21,7 +21,7 @@ public class RandomizeDestinationNode : ActionNode
     {
         Vector3 randomPoint = Random.insideUnitCircle * walkRadius;
         randomPoint.z = randomPoint.y;
-        randomPoint.y = 0;
+        randomPoint.y = 0.3f;
         randomPoint += new Vector3(240.04f, 0.0f, 333.2f);
         NavMeshHit hit;
         NavMesh.SamplePosition(randomPoint, out hit, walkRadius, 1);

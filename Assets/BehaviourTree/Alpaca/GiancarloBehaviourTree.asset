@@ -16,7 +16,7 @@ MonoBehaviour:
   isStarted: 1
   blackboard: {fileID: 0}
   guid: 029a7a52c02e14e4b9d4e4dfa2fc11a4
-  position: {x: 1015.006, y: 516.1146}
+  position: {x: 1014.9997, y: 567.40936}
   description: 
   animationKey: Alpaca-Walk
 --- !u!114 &-9032769093373343941
@@ -35,10 +35,10 @@ MonoBehaviour:
   isStarted: 0
   blackboard: {fileID: 0}
   guid: e91cf632194ba8648a6af7c5919a4118
-  position: {x: 1360.0061, y: 516.1146}
+  position: {x: 1359.9996, y: 567.40936}
   description: 
   destinationKey: RandomDestination
-  tolerance: 1
+  tolerance: 1.5
 --- !u!114 &-8146482927272301512
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -55,10 +55,29 @@ MonoBehaviour:
   isStarted: 0
   blackboard: {fileID: 0}
   guid: a3cab556234eea744868a50f474f5bd7
-  position: {x: 1686.006, y: 516.1146}
+  position: {x: 1685.9996, y: 567.40936}
   description: 
   minDuration: 5
   maxDuration: 9
+--- !u!114 &-8001477915434119055
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86d4230305a727c4c87c8699f9d234de, type: 3}
+  m_Name: RotationNode
+  m_EditorClassIdentifier: 
+  state: 0
+  isStarted: 0
+  blackboard: {fileID: 0}
+  guid: 85b5d1146c4b95d48a4de31bd9a2c846
+  position: {x: 445, y: 902.40924}
+  description: 
+  lookPosition: {x: 125, y: 0, z: 335}
 --- !u!114 &-7864076438591272198
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -121,7 +140,7 @@ MonoBehaviour:
   isStarted: 0
   blackboard: {fileID: 0}
   guid: f838c503ea08c2b49b6799188968aada
-  position: {x: -1228, y: 385.99997}
+  position: {x: -1227.9998, y: 414.84558}
   description: 
   duration: 3
 --- !u!114 &-6742166226588519876
@@ -140,10 +159,10 @@ MonoBehaviour:
   isStarted: 0
   blackboard: {fileID: 0}
   guid: a357f602162be474498b12676f2f8510
-  position: {x: -167.99402, y: 649.1147}
+  position: {x: -422.99994, y: 903.4093}
   description: 
   destinationKey: Hay
-  tolerance: 1
+  tolerance: 1.5
 --- !u!114 &-6184311679374015585
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -160,9 +179,49 @@ MonoBehaviour:
   isStarted: 0
   blackboard: {fileID: 0}
   guid: 5aff26a0fcf228041995d291f72d6685
-  position: {x: 342.006, y: 516.1146}
+  position: {x: 342, y: 567.40936}
   description: 
   animationKey: Alpaca-Eating
+--- !u!114 &-5805107408091641347
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86d4230305a727c4c87c8699f9d234de, type: 3}
+  m_Name: RotationNode
+  m_EditorClassIdentifier: 
+  state: 0
+  isStarted: 0
+  blackboard: {fileID: 0}
+  guid: 98a4df224db6035459258d6f88e832b6
+  position: {x: 95.999916, y: 903.4093}
+  description: 
+  lookPosition: {x: 307, y: 0, z: 407}
+--- !u!114 &-4907821207800139366
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3996b50878de65743a31015986ad0e36, type: 3}
+  m_Name: SequencerNode
+  m_EditorClassIdentifier: 
+  state: 0
+  isStarted: 0
+  blackboard: {fileID: 0}
+  guid: c7eb369cce35d0a4f8fe5ff4b0b222fe
+  position: {x: -336.99997, y: 756.40924}
+  description: 
+  children:
+  - {fileID: -6742166226588519876}
+  - {fileID: 2416207439630512963}
 --- !u!114 &-4475876727588243741
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -179,7 +238,7 @@ MonoBehaviour:
   isStarted: 0
   blackboard: {fileID: 0}
   guid: 78ffe09850eb4254c8ea4b9d361a8814
-  position: {x: 1521.0061, y: 516.1146}
+  position: {x: 1520.9998, y: 567.40936}
   description: 
   animationKey: Alpaca-Idle
 --- !u!114 &-4431537245857977715
@@ -198,7 +257,7 @@ MonoBehaviour:
   isStarted: 0
   blackboard: {fileID: 0}
   guid: 226b8c9cf83fbaa4a95fb98e0536454c
-  position: {x: -1060, y: 385.99997}
+  position: {x: -1059.9999, y: 414.84558}
   description: 
   animationKey: Alpaca-AttackHeadbutt
 --- !u!114 &-3300959818044356595
@@ -217,7 +276,7 @@ MonoBehaviour:
   isStarted: 0
   blackboard: {fileID: 0}
   guid: ee6da25c6cd735d4093238cc8ee1b2f4
-  position: {x: 1184.006, y: 516.1146}
+  position: {x: 1183.9996, y: 567.40936}
   description: 
   destinationKey: RandomDestination
   walkRadius: 75
@@ -258,10 +317,10 @@ MonoBehaviour:
   isStarted: 0
   blackboard: {fileID: 0}
   guid: de9ae8e839ead634d83d3b369cb36564
-  position: {x: 176.00592, y: 649.1147}
+  position: {x: 276.99994, y: 904.4093}
   description: 
   destinationKey: HayShed
-  tolerance: 1
+  tolerance: 1.5
 --- !u!114 &-1568268880619744521
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -278,7 +337,7 @@ MonoBehaviour:
   isStarted: 0
   blackboard: {fileID: 0}
   guid: 82892b7983f02414c979672660fb4286
-  position: {x: -736.00006, y: 386}
+  position: {x: -736.95374, y: 413.9773}
   description: 
   duration: 1
 --- !u!114 &-1567009165603376730
@@ -297,7 +356,7 @@ MonoBehaviour:
   isStarted: 0
   blackboard: {fileID: 0}
   guid: 4bdd57ec129d4924fb26dd6c89bf8778
-  position: {x: 176.00592, y: 516.1146}
+  position: {x: 175.99998, y: 567.40936}
   description: 
   duration: 5
 --- !u!114 &-471013646431136792
@@ -323,6 +382,7 @@ MonoBehaviour:
   - {fileID: -4431537245857977715}
   - {fileID: 3589887510927629694}
   - {fileID: -1568268880619744521}
+  - {fileID: 3611016457005114078}
   - {fileID: 432615767601451302}
   - {fileID: 2614533126517635051}
 --- !u!114 &11400000
@@ -335,9 +395,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: bda80f8de0d36a5488aa68e3075c989d, type: 3}
-  m_Name: Alpaca2BehaviourTree
+  m_Name: GiancarloBehaviourTree
   m_EditorClassIdentifier: 
-  blackboard: {fileID: 11400000, guid: 09a66cfc0eafcfd448dd1d3189e0fb36, type: 2}
+  blackboard: {fileID: 11400000, guid: 23fafe5fd96dc7e4986b9c084e95ba2e, type: 2}
   rootNode: {fileID: 1616245187985775744}
   treeState: 0
   nodes:
@@ -368,6 +428,13 @@ MonoBehaviour:
   - {fileID: -1568268880619744521}
   - {fileID: 2614533126517635051}
   - {fileID: 3589887510927629694}
+  - {fileID: 2453514106237597923}
+  - {fileID: -5805107408091641347}
+  - {fileID: -4907821207800139366}
+  - {fileID: 2416207439630512963}
+  - {fileID: -8001477915434119055}
+  - {fileID: 3885574915245858694}
+  - {fileID: 3611016457005114078}
 --- !u!114 &114886263052083999
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -384,10 +451,10 @@ MonoBehaviour:
   isStarted: 0
   blackboard: {fileID: 0}
   guid: 1c0cc53777eb1f5498a8ce45cc4d7f0b
-  position: {x: 7.0059204, y: 649.1147}
+  position: {x: -78.000046, y: 905.4093}
   description: 
   destinationKey: Trough
-  tolerance: 1
+  tolerance: 1.5
 --- !u!114 &432615767601451302
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -404,7 +471,7 @@ MonoBehaviour:
   isStarted: 0
   blackboard: {fileID: 0}
   guid: 47fb72413736d5944b46efca79ee9190
-  position: {x: -569.00006, y: 386}
+  position: {x: -401, y: 417.84546}
   description: 
   entryKey: canHawkTuah
   newValue: 0
@@ -447,6 +514,46 @@ MonoBehaviour:
   position: {x: 13, y: -213}
   description: 
   child: {fileID: 544602364786520549}
+--- !u!114 &2416207439630512963
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86d4230305a727c4c87c8699f9d234de, type: 3}
+  m_Name: RotationNode
+  m_EditorClassIdentifier: 
+  state: 0
+  isStarted: 0
+  blackboard: {fileID: 0}
+  guid: ec2727c0c41fe2b419858b6a3169ba66
+  position: {x: -249.99998, y: 903.4093}
+  description: 
+  lookPosition: {x: 240, y: 0, z: 444}
+--- !u!114 &2453514106237597923
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3996b50878de65743a31015986ad0e36, type: 3}
+  m_Name: SequencerNode
+  m_EditorClassIdentifier: 
+  state: 0
+  isStarted: 0
+  blackboard: {fileID: 0}
+  guid: 99cdf6c5bf4eb9147976c50b40a35862
+  position: {x: 8.999936, y: 756.40924}
+  description: 
+  children:
+  - {fileID: 114886263052083999}
+  - {fileID: -5805107408091641347}
 --- !u!114 &2614533126517635051
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -463,7 +570,7 @@ MonoBehaviour:
   isStarted: 0
   blackboard: {fileID: 0}
   guid: 99ebc260452aa9f4ba9840baae146d6a
-  position: {x: -346.52524, y: 386.0001}
+  position: {x: -179.00002, y: 417.84546}
   description: 
   animationKey: Alpaca-Walk
 --- !u!114 &2742273267436195007
@@ -482,7 +589,7 @@ MonoBehaviour:
   isStarted: 0
   blackboard: {fileID: 0}
   guid: 9f5750b326650a44a91ad8cf14bcc73a
-  position: {x: 677.006, y: 516.1146}
+  position: {x: 676.99994, y: 567.40936}
   description: 
   entryKey: isHungry
   newValue: 0
@@ -502,12 +609,12 @@ MonoBehaviour:
   isStarted: 0
   blackboard: {fileID: 0}
   guid: ea6f6cb36ea58f1489ee4af1dac61cc2
-  position: {x: 7.0059204, y: 516.1146}
+  position: {x: 7.000072, y: 567.40936}
   description: 
   children:
-  - {fileID: -6742166226588519876}
-  - {fileID: 114886263052083999}
-  - {fileID: -1880818757473964252}
+  - {fileID: -4907821207800139366}
+  - {fileID: 2453514106237597923}
+  - {fileID: 3885574915245858694}
 --- !u!114 &3198187442178841407
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -524,7 +631,7 @@ MonoBehaviour:
   isStarted: 0
   blackboard: {fileID: 0}
   guid: 054be5678c85fac42a03c7d47a3fc69d
-  position: {x: -155.99402, y: 516.1146}
+  position: {x: -155.99992, y: 567.40936}
   description: 
   animationKey: Alpaca-Walk
 --- !u!114 &3589887510927629694
@@ -543,8 +650,48 @@ MonoBehaviour:
   isStarted: 0
   blackboard: {fileID: 0}
   guid: f1dba527dba4e4746a94c30cd60d9ed1
-  position: {x: -899, y: 386}
+  position: {x: -898.9999, y: 414.84558}
   description: 
+--- !u!114 &3611016457005114078
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1ff6bae773798134ea68be5be9a3b8c2, type: 3}
+  m_Name: PlayAnimationNode
+  m_EditorClassIdentifier: 
+  state: 0
+  isStarted: 0
+  blackboard: {fileID: 0}
+  guid: 229379404c1b71640b82cf4d0f858399
+  position: {x: -571.65924, y: 417.55707}
+  description: 
+  animationKey: Alpaca-Idle2
+--- !u!114 &3885574915245858694
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3996b50878de65743a31015986ad0e36, type: 3}
+  m_Name: SequencerNode
+  m_EditorClassIdentifier: 
+  state: 0
+  isStarted: 0
+  blackboard: {fileID: 0}
+  guid: 098cb99b2d7517840979132a1256bb40
+  position: {x: 357, y: 758.4093}
+  description: 
+  children:
+  - {fileID: -1880818757473964252}
+  - {fileID: -8001477915434119055}
 --- !u!114 &5270959654019460558
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -585,7 +732,7 @@ MonoBehaviour:
   isStarted: 0
   blackboard: {fileID: 0}
   guid: fd7f7fe68c964fb46a5ac379d09c82b4
-  position: {x: 510.00607, y: 516.1146}
+  position: {x: 509.9999, y: 567.40936}
   description: 
   minDuration: 10
   maxDuration: 15
